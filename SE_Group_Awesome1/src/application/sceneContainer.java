@@ -18,6 +18,9 @@ public class sceneContainer
 	AnchorPane menuPane; 
 	Scene menuScene; 
 	
+	AnchorPane ClockInOutPane;
+	Scene ClockInOutScene;
+	
 	sceneContainer() // constructor 
 	{
 		stage = new Stage(); 
@@ -38,6 +41,7 @@ public class sceneContainer
 		
 		menuScene = new Scene(menuPane, 600, 600); 
 		LoginScene = new Scene(loginPane, 600, 600); 
+		ClockInOutScene = new Scene(ClockInOutPane, 623, 702);
 	}
 	
 	public void loadScene(Scene scene, String sceneTitle)
@@ -59,5 +63,11 @@ public class sceneContainer
 		stage.setScene(menuScene);
 		stage.setTitle("This is the menu Scene");
 		stage.show(); 
+	}
+	public void DisplayClockInOutScene()
+	{
+		stage.setScene(ClockInOutScene);
+		stage.setTitle("Clock in here");
+		stage.show();
 	}
 }

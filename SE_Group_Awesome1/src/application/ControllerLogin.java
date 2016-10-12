@@ -21,7 +21,11 @@ public class ControllerLogin implements Initializable
 	@FXML 
 	public Button Btn_LoginId;
 	
-	@FXML Button Btn_clearTextId; 
+	@FXML 
+	public Button Btn_clearTextId; 
+	
+	@FXML
+	public Button Btn_Clock;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
