@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="462.0" prefWidth="523.0" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button fx:id="idcheese" layoutX="48.0" layoutY="107.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="133.0" text="Cheese" />
+      <Button fx:id="idSausageHamBacon" layoutX="227.0" layoutY="107.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="195.0" text="Sausage, Ham, or Bacon" />
+      <Button fx:id="idFriedEggSand" layoutX="227.0" layoutY="231.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="195.0" text="Fried Egg Sandwich with Cheese" />
+      <Button fx:id="idVeggie" layoutX="48.0" layoutY="231.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="133.0" text="Veggie" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="48.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="54.0" layoutX="-7.0" layoutY="414.0" stroke="BLACK" strokeType="INSIDE" width="530.0" />
+   </children>
+</AnchorPane>

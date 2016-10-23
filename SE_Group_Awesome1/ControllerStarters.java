@@ -9,28 +9,24 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
 
-public class ControllerMenuOptions implements Initializable
+public class ControllerStarters implements Initializable
 {
 	
 	@FXML 
-	public Button idBreakfast;
+	public Button idguacandchips;
 	@FXML 
-	public Button idStarters;
+	public Button idmixedflutes;
 	
 	@FXML 
-	public Button idSalads;
+	public Button idmeltedcheese;
 
 	@FXML 
-	public Button idBeverages;
+	public Button idloadedfries;
 	
 	@FXML 
-	public Button idMexican;
+	public Button idmozzarellasticks;
 	
-	@FXML 
-	public Button idLunch; 
 	
-	@FXML
-	public Button idDinner;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
