@@ -23,6 +23,10 @@ public class ControllerBreakfastSandwiches implements Initializable
 	@FXML 
 	public Button idFriedEggSand;
 	
+	@FXML 
+	public Button Back;
+	
+	
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

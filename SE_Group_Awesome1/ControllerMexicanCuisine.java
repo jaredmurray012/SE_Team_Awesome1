@@ -3,39 +3,39 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
-
-public class ControllerMenuOptions implements Initializable
-{
+public class ControllerMexicanCuisine {
+	@FXML 
+	public Button TacosDinner;
+	@FXML 
+	public Button Enchiladas;
 	
 	@FXML 
-	public Button idBreakfast;
-	@FXML 
-	public Button idStarters;
-	
-	@FXML 
-	public Button idSalads;
+	public Button SteakFajitas;
 
 	@FXML 
-	public Button idBeverages;
+	public Button ChickenFajitas;
 	
 	@FXML 
-	public Button idMexican;
+	public Button ChickenFlutes;
 	
 	@FXML 
-	public Button idLunch; 
+	public Button BeefFlutes; 
 	
 	@FXML
-	public Button idDinner;
+	public Button ShrimpTacos;
 	
-	@FXML 
+	@FXML
+	public Button TilapiaFilletTacos;
+	
+	@FXML
+	public Button BanderillasDeCamaron;
+	
+	@FXML
 	public Button Back;
-
-	@Override
+	
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
 		
