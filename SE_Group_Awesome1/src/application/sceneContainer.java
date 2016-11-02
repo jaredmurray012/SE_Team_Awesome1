@@ -38,6 +38,12 @@ public class sceneContainer
 			System.out.println("The Menu FXML did not load correctly"); 
 			e.printStackTrace();
 		}
+		try {
+			ClockInOutPane = FXMLLoader.load(getClass().getResource("Clock.fxml"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		menuScene = new Scene(menuPane, 600, 600); 
 		LoginScene = new Scene(loginPane, 600, 600); 
