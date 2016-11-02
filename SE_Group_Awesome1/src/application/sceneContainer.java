@@ -36,7 +36,7 @@ public class sceneContainer
 			menuPane = FXMLLoader.load(getClass().getResource("FXML_Menu.fxml"));
 		} catch (IOException e) {
 			System.out.println("The Menu FXML did not load correctly"); 
-			e.printStackTrace()m;
+			e.printStackTrace();
 		}
 		
 		menuScene = new Scene(menuPane, 600, 600); 
