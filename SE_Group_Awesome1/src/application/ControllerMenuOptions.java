@@ -1,4 +1,4 @@
-<<<<<<< HEAD:SE_Group_Awesome1/src/application/ControllerMenuOptions.java
+/*This is a weird FIle 
 package application;
 
 import java.net.URL;
@@ -81,12 +81,11 @@ public class ControllerMenuOptions implements Initializable
 	public Button Back;
 
 	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
+	public void initialize(URL location, ResourceBundle resources) 
+	{
+		
 		
 	}
 	
-	
-	
-}
->>>>>>> origin/master:SE_Group_Awesome1/ControllerMenuOptions.java
+} */
+

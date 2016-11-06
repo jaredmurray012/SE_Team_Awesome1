@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="528.0" prefWidth="531.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="528.0" prefWidth="531.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerHotOffTheGriddle">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="51.0" layoutX="2.0" stroke="BLACK" strokeType="INSIDE" width="538.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="51.0" layoutY="477.0" stroke="BLACK" strokeType="INSIDE" width="541.0" />

@@ -3,6 +3,8 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
@@ -36,9 +38,107 @@ public class ControllerMexicanCuisine {
 	@FXML
 	public Button Back;
 	
-	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
+	public void initialize(URL location, ResourceBundle resources) 
+	{
+		TacosDinner.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+			
+			}
+		});
 		
+		Enchiladas.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+			
+			}
+		});
+		
+		SteakFajitas.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+			
+			}
+		});
+		
+		ChickenFajitas.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+			
+			}
+		});
+		
+		ChickenFlutes.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+			
+			}
+		});
+		
+		BeefFlutes.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+			
+			}
+		});
+		
+		ShrimpTacos.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+			
+			}
+		});
+		
+		TilapiaFilletTacos.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+			
+			}
+		});
+		
+		BanderillasDeCamaron.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+			
+			}
+		});
+		
+		Back.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+			
+			}
+		});
 	}
 	
 	
