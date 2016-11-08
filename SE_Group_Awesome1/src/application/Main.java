@@ -1,3 +1,4 @@
+// Added some documentation 
 package application;
 	
 import java.sql.SQLException;
