@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerLogin">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@dark%20theme.css">
+         <children>
+            <Label alignment="CENTER" layoutX="286.0" layoutY="132.0" prefHeight="59.0" prefWidth="119.0" text="Login" textAlignment="CENTER" />
+            <TextField fx:id="userNameId" layoutX="256.0" layoutY="236.0" />
+            <TextField fx:id="userPasswordId" layoutX="256.0" layoutY="352.0" />
+            <Button fx:id="Btn_LoginId" layoutX="256.0" layoutY="442.0" mnemonicParsing="false" text="Login " />
+            <Button fx:id="Btn_clearTextId" layoutX="406.0" layoutY="442.0" mnemonicParsing="false" text="Clear Text" />
+            <Button fx:id="Btn_Clock" layoutX="406.0" layoutY="38.0" mnemonicParsing="false" text="Clock In/Out" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="37.0" layoutX="27.0" layoutY="508.0" stroke="BLACK" strokeType="INSIDE" width="520.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="532.0" layoutX="45.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+            <Label layoutX="113.0" layoutY="244.0" text="Employee Number" />
+            <Label layoutX="144.0" layoutY="360.0" text="Password" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
