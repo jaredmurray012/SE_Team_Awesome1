@@ -36,7 +36,7 @@ public class ControllerLogin implements Initializable
 			public void handle(ActionEvent event) 
 			{
 				System.out.print(userNameId.getText() +" " + userPasswordId.getText());
-				Main.Scenes.DisplayMenuScene();
+				Main.Scenes.DisplayMenuOptionsScene();
 				//Main.dbconnect. 
 			}
 		});
@@ -50,6 +50,17 @@ public class ControllerLogin implements Initializable
 				userPasswordId.clear(); 
 			}
 		});
+		
+		Btn_Clock.setOnAction(new EventHandler<ActionEvent> ()
+				{
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						
+						Main.Scenes.DisplayClockInOutScene();
+						//Main.dbconnect. 
+					}
+				});
 		
 	}
 	

@@ -8,25 +8,28 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMenu">
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMenuOptions">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="59.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" width="705.0" />
-      <Button fx:id="idbreakfast" layoutX="55.0" layoutY="241.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Breakfast " textFill="#000000d2" wrapText="true">
-         <cursor>
-            <Cursor fx:constant="DEFAULT" />
-         </cursor>
-      </Button>
-      <Button fx:id="idlunch" layoutX="269.0" layoutY="241.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Lunch" />
-      <Button fx:id="idDinner" layoutX="472.0" layoutY="241.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Dinner" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="59.0" layoutX="-2.0" layoutY="543.0" stroke="BLACK" strokeType="INSIDE" width="707.0" />
-      <Button fx:id="idstarters" layoutX="55.0" layoutY="108.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Starters" textFill="#000000d2" wrapText="true">
-         <cursor>
-            <Cursor fx:constant="DEFAULT" />
-         </cursor>
-      </Button>
-      <Button fx:id="idSalads" layoutX="269.0" layoutY="108.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Salads" />
-      <Button fx:id="idBeverages" layoutX="271.0" layoutY="388.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Beverages" />
-      <Button fx:id="idMexican" layoutX="472.0" layoutY="108.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Mexican Cousine" />
-      <Button fx:id="Back" layoutX="535.0" layoutY="443.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="66.0" text="Back" />
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@dark%20theme.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="59.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" width="705.0" />
+            <Button fx:id="btn_idbreakfast" layoutX="55.0" layoutY="248.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Breakfast " textFill="#000000d2" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="idlunch" layoutX="269.0" layoutY="248.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Lunch" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="59.0" layoutX="-2.0" layoutY="543.0" stroke="BLACK" strokeType="INSIDE" width="707.0" />
+            <Button fx:id="btn_idstarters" layoutX="55.0" layoutY="108.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Starters" textFill="#000000d2" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_idsalads" layoutX="269.0" layoutY="108.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Salads" />
+            <Button fx:id="btn_idbeverages" layoutX="472.0" layoutY="248.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Beverages" />
+            <Button fx:id="btn_idmexican_cuisine" layoutX="472.0" layoutY="108.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Mexican Cuisine" />
+            <Button fx:id="Back" layoutX="299.0" layoutY="459.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="127.0" text="Back" />
+         </children>
+      </AnchorPane>
    </children>
-</AnchorPane>
+</HBox>

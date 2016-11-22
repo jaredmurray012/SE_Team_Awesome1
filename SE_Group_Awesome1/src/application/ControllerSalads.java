@@ -9,32 +9,32 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
-
-public class ControllerFamousBenedicts implements Initializable
+public class ControllerSalads implements Initializable
 {
 	
 	@FXML 
-	public Button TraditionalBenedict;
+	public Button btn_idgardensalad;
+	@FXML 
+	public Button btn_idjuliennesalad;
 	
 	@FXML 
-	public Button CountryBenedict;
-	
-	@FXML 
-	public Button EggsFlorentine;
+	public Button btn_idtacosalad;
 
 	@FXML 
-	public Button SantaFeBenedict;
+	public Button btn_idgreeksalad;
 	
 	@FXML 
-	public Button AlaskaBenedict;
+	public Button btn_idcesarsalad;
 	
 	@FXML 
-	public Button Back;
+	public Button back; 
 	
+	
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
-		TraditionalBenedict.setOnAction(new EventHandler<ActionEvent> ()
+		btn_idgardensalad.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -44,7 +44,7 @@ public class ControllerFamousBenedicts implements Initializable
 			}
 		});
 		
-		CountryBenedict.setOnAction(new EventHandler<ActionEvent> ()
+		btn_idjuliennesalad.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -54,7 +54,7 @@ public class ControllerFamousBenedicts implements Initializable
 			}
 		});
 		
-		EggsFlorentine.setOnAction(new EventHandler<ActionEvent> ()
+		btn_idtacosalad.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -64,7 +64,7 @@ public class ControllerFamousBenedicts implements Initializable
 			}
 		});
 		
-		SantaFeBenedict.setOnAction(new EventHandler<ActionEvent> ()
+		btn_idgreeksalad.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -74,7 +74,7 @@ public class ControllerFamousBenedicts implements Initializable
 			}
 		});
 		
-		AlaskaBenedict.setOnAction(new EventHandler<ActionEvent> ()
+		btn_idcesarsalad.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -84,17 +84,20 @@ public class ControllerFamousBenedicts implements Initializable
 			}
 		});
 		
-		Back.setOnAction(new EventHandler<ActionEvent> ()
-				{
-					@Override
-					public void handle(ActionEvent event) 
-					{
-						Main.Scenes.DisplayBreakfastScene();
-						//Main.dbconnect. 	
-					}
-				});
+		back.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				Main.Scenes.DisplayMenuOptionsScene();
+				//Main.dbconnect. 
+			
+			
+			}
+		});
+		
+		
+		
 	}
-	
-	
 	
 }

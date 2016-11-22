@@ -6,17 +6,23 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="565.0" prefWidth="548.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerSkillets">
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerSkillets">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="54.0" layoutX="-1.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="553.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="54.0" layoutY="531.0" stroke="BLACK" strokeType="INSIDE" width="553.0" />
-      <Button fx:id="WesternSkillet" layoutX="31.0" layoutY="78.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Western" />
-      <Button fx:id="FiestaSkillet" layoutX="175.0" layoutY="78.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Fiesta" />
-      <Button fx:id="HawaiiSkillet" layoutX="31.0" layoutY="160.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Hawaii" />
-      <Button fx:id="MeatLoversSkillet" layoutX="175.0" layoutY="160.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Meat Lover's" />
-      <Button fx:id="SantaFeSkillet" layoutX="320.0" layoutY="78.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Santa Fe" />
-      <Button fx:id="VeggieSkillet" layoutX="320.0" layoutY="160.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Veggie" />
-      <Button fx:id="IrishSkillet" layoutX="31.0" layoutY="239.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Irish" />
-      <Button fx:id="Back" layoutX="430.0" layoutY="445.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="71.0" text="Back" />
+      <AnchorPane prefHeight="565.0" prefWidth="548.0" styleClass="background" stylesheets="@dark%20theme.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="54.0" layoutX="-1.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="553.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="54.0" layoutY="531.0" stroke="BLACK" strokeType="INSIDE" width="553.0" />
+            <Button fx:id="WesternSkillet" layoutX="46.0" layoutY="150.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="108.0" text="Western" wrapText="true" />
+            <Button fx:id="FiestaSkillet" layoutX="198.0" layoutY="150.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Fiesta" />
+            <Button fx:id="HawaiiSkillet" layoutX="46.0" layoutY="263.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Hawaii" />
+            <Button fx:id="MeatLoversSkillet" layoutX="186.0" layoutY="253.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="117.0" text="Meat Lover's" wrapText="true" />
+            <Button fx:id="SantaFeSkillet" layoutX="351.0" layoutY="150.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="108.0" text="Santa Fe" />
+            <Button fx:id="VeggieSkillet" layoutX="356.0" layoutY="263.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Veggie" />
+            <Button fx:id="IrishSkillet" layoutX="186.0" layoutY="366.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Irish" />
+            <Button fx:id="Back" layoutX="407.0" layoutY="445.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="94.0" text="Back" />
+            <Label layoutX="221.0" layoutY="75.0" text="Skillets" />
+         </children>
+      </AnchorPane>
    </children>
-</AnchorPane>
+</HBox>

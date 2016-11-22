@@ -49,7 +49,8 @@ public class ControllerHotOffTheGriddle implements Initializable
 	@FXML 
 	public Button HomersWaffle;
 	
-	
+	@FXML
+	public Button Back;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
@@ -173,6 +174,16 @@ public class ControllerHotOffTheGriddle implements Initializable
 			
 			}
 		});
+		
+		Back.setOnAction(new EventHandler<ActionEvent> ()
+				{
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						Main.Scenes.DisplayBreakfastScene();
+						//Main.dbconnect. 	
+					}
+				});
 		
 }
 	

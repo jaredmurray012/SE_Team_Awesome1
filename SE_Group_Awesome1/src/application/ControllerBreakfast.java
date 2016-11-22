@@ -32,9 +32,13 @@ public class ControllerBreakfast implements Initializable
 	
 	@FXML
 	public Button idBreakfastSandwiches;
+	
 	@FXML
 	public Button idBreakfastMasterpieces;
 
+	@FXML
+	public Button back;
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -43,6 +47,8 @@ public class ControllerBreakfast implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
+				Main.Scenes.DisplayHotOffTheGriddleScene();
+				//Main.dbconnect. 
 				
 			
 			}
@@ -53,8 +59,9 @@ public class ControllerBreakfast implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
-			
+				Main.Scenes.DisplayHealthyChoices();
+				//Main.dbconnect. 
+					 
 			}
 		});
 		
@@ -63,7 +70,8 @@ public class ControllerBreakfast implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				Main.Scenes.DisplayOmeletsScene();
+				//Main.dbconnect. 
 			
 			}
 		});
@@ -74,7 +82,8 @@ public class ControllerBreakfast implements Initializable
 			public void handle(ActionEvent event) 
 			{
 				
-			
+				Main.Scenes.DisplaySkilletsScene();
+				//Main.dbconnect. 
 			}
 		});
 		
@@ -84,7 +93,8 @@ public class ControllerBreakfast implements Initializable
 			public void handle(ActionEvent event) 
 			{
 				
-			
+				Main.Scenes.DisplayFamousBenedictsScene();
+				//Main.dbconnect. 
 			}
 		});
 		
@@ -94,7 +104,8 @@ public class ControllerBreakfast implements Initializable
 			public void handle(ActionEvent event) 
 			{
 				
-			
+				Main.Scenes.DisplayCountryFavoriteScene();
+				//Main.dbconnect. 
 			}
 		});
 		
@@ -104,7 +115,8 @@ public class ControllerBreakfast implements Initializable
 			public void handle(ActionEvent event) 
 			{
 				
-			
+				Main.Scenes.DisplayBreakfastSandwichesScene();
+				//Main.dbconnect. 
 			}
 		});
 		
@@ -113,11 +125,22 @@ public class ControllerBreakfast implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				Main.Scenes.DisplayBreakfastMasterpiecesScene();
+				//Main.dbconnect. 
 			
 			}
 		});
-		
+		back.setOnAction(new EventHandler<ActionEvent> ()
+				{
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						
+						Main.Scenes.DisplayMenuOptionsScene();
+						//Main.dbconnect. 
+					
+					}
+				});
 		
 	}
 	

@@ -20,7 +20,7 @@ public class ControllerSkillets implements Initializable
 	public Button FiestaSkillet;
 	
 	@FXML 
-	public Button Hawaii;
+	public Button HawaiiSkillet;
 
 	@FXML 
 	public Button MeatLoversSkillet;
@@ -62,7 +62,7 @@ public class ControllerSkillets implements Initializable
 			}
 		});
 		
-		Hawaii.setOnAction(new EventHandler<ActionEvent> ()
+		HawaiiSkillet.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -113,14 +113,14 @@ public class ControllerSkillets implements Initializable
 		});
 		
 		Back.setOnAction(new EventHandler<ActionEvent> ()
-		{
-			@Override
-			public void handle(ActionEvent event) 
-			{
-				
-			
-			}
-		});
+				{
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						Main.Scenes.DisplayBreakfastScene();
+						//Main.dbconnect. 	
+					}
+				});
 	}
 	
 	
