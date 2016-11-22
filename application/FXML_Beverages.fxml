@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerBeverages">
+   <children>
+      <AnchorPane minHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@dark%20theme.css">
+         <children>
+            <Button fx:id="btn_idcoffee" layoutX="12.0" layoutY="84.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="118.0" text="Coffee" />
+            <Button fx:id="btn_idtea" layoutX="142.0" layoutY="84.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="118.0" text="Hot or Iced Tea" wrapText="true" />
+            <Button fx:id="btn_idmilk" layoutX="76.0" layoutY="162.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="118.0" text="Regular or Chocolate Milk" wrapText="true" />
+            <Button fx:id="btn_idorangejuice" layoutX="481.0" layoutY="79.0" mnemonicParsing="false" text="Orange" />
+            <Button fx:id="btn_idapplejuice" layoutX="340.0" layoutY="79.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="113.0" text="Apple" />
+            <Button fx:id="btn_idgrapefruitjuice" layoutX="340.0" layoutY="211.0" mnemonicParsing="false" text="Grapefruit" />
+            <Button fx:id="btn_idcranberryjuice" layoutX="340.0" layoutY="146.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="113.0" text="Cranberry" />
+            <Button fx:id="btn_idtomatojuice" layoutX="477.0" layoutY="211.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="105.0" text="Tomato" />
+            <Button fx:id="btn_idgrapejuice" layoutX="481.0" layoutY="146.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="97.0" text="Grape" />
+            <Button fx:id="btn_idchocolateshake" layoutX="14.0" layoutY="367.0" mnemonicParsing="false" text="Chocolate" />
+            <Button fx:id="btn_idvanillashake" layoutX="142.0" layoutY="367.0" mnemonicParsing="false" text="Vanilla" />
+            <Label layoutX="430.0" layoutY="32.0" text="Juices" underline="true" />
+            <Label layoutX="71.0" layoutY="290.0" text="Shakes" underline="true" />
+            <Button fx:id="btn_idstrawberryshake" layoutX="64.0" layoutY="424.0" mnemonicParsing="false" text="Strawberry" />
+            <Label layoutX="384.0" layoutY="290.0" text="Fountain Drinks" underline="true" />
+            <Label layoutX="123.0" layoutY="32.0" text="Other" underline="true" />
+            <Button fx:id="back" layoutX="71.0" layoutY="533.0" mnemonicParsing="false" text="Back">
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="btn_idpepsi" layoutX="340.0" layoutY="334.0" mnemonicParsing="false" text="Pepsi" />
+            <Button fx:id="btn_iddietpepsi" layoutX="450.0" layoutY="334.0" mnemonicParsing="false" text="Diet Pepsi" />
+            <Button fx:id="btn_idmountaindew" layoutX="317.0" layoutY="391.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="113.0" text="Mountain Dew" wrapText="true" />
+            <Button fx:id="btn_iddrpepper" layoutX="448.0" layoutY="391.0" mnemonicParsing="false" text="Dr. Pepper" />
+            <Button fx:id="btn_idcrushorange" layoutX="438.0" layoutY="443.0" mnemonicParsing="false" text="Crush Orange" />
+            <Button fx:id="btn_idsierramist" layoutX="320.0" layoutY="473.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="91.0" text="Sierra Mist" wrapText="true" />
+            <Button fx:id="btn_idsobelifewater" layoutX="424.0" layoutY="500.0" mnemonicParsing="false" text="SoBe Life Water" />
+            <Button fx:id="btn_iddolelemonade" layoutX="354.0" layoutY="543.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="165.0" text="Dole Lemonade" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95999e" height="550.0" layoutX="274.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="39.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

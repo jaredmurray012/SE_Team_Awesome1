@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerCountryFavorites">
+   <children>
+      <AnchorPane prefHeight="526.0" prefWidth="545.0" styleClass="background" stylesheets="@dark%20theme.css">
+         <children>
+            <Button fx:id="BiscuitsandGravyFull" layoutX="87.0" layoutY="138.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="179.0" text="Biscuits and Gravy Full Order" wrapText="true" />
+            <Button fx:id="CountryFriedSteak" layoutX="87.0" layoutY="257.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="179.0" text="Country Fried Steak" />
+            <Button fx:id="SouthernBreakfast" layoutX="299.0" layoutY="257.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="179.0" text="Southern Breakfast" />
+            <Button fx:id="Back" layoutX="350.0" layoutY="410.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="98.0" text="Back" />
+            <Button fx:id="BiscuitsandGravyHalf" layoutX="299.0" layoutY="138.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="179.0" text="Biscuits and Gravy Half Order" wrapText="true" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="51.0" stroke="BLACK" strokeType="INSIDE" width="563.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="51.0" layoutY="475.0" stroke="BLACK" strokeType="INSIDE" width="563.0" />
+            <Label layoutX="223.0" layoutY="73.0" text="Country Favorites" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

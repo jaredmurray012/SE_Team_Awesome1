@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerHotOffTheGriddle">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@dark%20theme.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="51.0" layoutX="2.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="60.0" layoutX="-1.0" layoutY="541.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Button fx:id="Back" layoutX="433.0" layoutY="488.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="80.0" text="Back" />
+            <Button fx:id="FrenchToastHalfStack" layoutX="29.0" layoutY="50.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="183.0" text="French Toast Half Stack" wrapText="true" />
+            <Button fx:id="FrenchToastFullStack" layoutX="29.0" layoutY="117.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="183.0" text="French Toast Full Stack" wrapText="true" />
+            <Button fx:id="BananaNutToast" layoutX="29.0" layoutY="185.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="183.0" text="Banana Nut Bread French Toast" wrapText="true" />
+            <Button fx:id="CinnamonRaisinToast" layoutX="29.0" layoutY="253.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="183.0" text="Cinnamon Raisin French Toast" wrapText="true" />
+            <Button fx:id="ButtermilkPancakesHalf" layoutX="29.0" layoutY="329.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="183.0" text="Butter Milk Pancakes Half Stack" wrapText="true" />
+            <Button fx:id="ButterMilkPancakesFull" layoutX="290.0" layoutY="80.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="183.0" text="Butter Milk Pancakes Full Stack" wrapText="true" />
+            <Button fx:id="ChocPecanPancakes" layoutX="290.0" layoutY="147.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="183.0" text="Chocolate or Pecan Pancakes" wrapText="true" />
+            <Button fx:id="PigsInABlaket" layoutX="290.0" layoutY="301.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="183.0" text="Pigs  in a Blanket" />
+            <Button layoutX="290.0" layoutY="223.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="183.0" text="Banana Pecans Pancakes" wrapText="true" />
+            <Button fx:id="BelgiumWaffle" layoutX="290.0" layoutY="359.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="183.0" text="Belgium Waffle" />
+            <Button fx:id="HomersWaffle" layoutX="290.0" layoutY="413.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="183.0" text="Homer's Waffle" />
+            <Button fx:id="ThreePlainCrepes" layoutX="29.0" layoutY="400.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="183.0" text="Three Plain Crepes" />
+            <Button fx:id="ThreeCheeseBlintzes" layoutX="29.0" layoutY="458.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="183.0" text="Three Cheese Blintzes" wrapText="true" />
+            <Label layoutX="246.0" layoutY="50.0" text="Hot Off The Griddle" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerBreakfast">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@dark%20theme.css">
+         <children>
+            <Button fx:id="idHotOffTheGriddle" layoutX="72.0" layoutY="117.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="188.0" text="Hot off the Griddle" />
+            <Button fx:id="idHealthyOptions" layoutX="368.0" layoutY="117.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" text="Healthy Options" />
+            <Button fx:id="idOmelets" layoutX="79.0" layoutY="216.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="188.0" text="Omelets" />
+            <Button fx:id="idSkillets" layoutX="367.0" layoutY="216.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" text="Skillets" />
+            <Button fx:id="idFamousBenedicts" layoutX="82.0" layoutY="322.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="188.0" text="Famous Benedicts" />
+            <Button fx:id="idCountryFavorites" layoutX="364.0" layoutY="322.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" text="Country Favorites" />
+            <Button fx:id="idBreakfastSandwiches" layoutX="80.0" layoutY="406.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="188.0" text="Breakfast Sandwiches" />
+            <Button fx:id="idBreakfastMasterpieces" layoutX="363.0" layoutY="406.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" text="Breakfast Masterpieces" />
+            <Button fx:id="back" layoutX="270.0" layoutY="505.0" mnemonicParsing="false" text="Back" />
+            <Label layoutX="252.0" layoutY="48.0" prefHeight="33.0" prefWidth="153.0" text="Breakfast Options" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
