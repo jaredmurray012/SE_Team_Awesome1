@@ -56,7 +56,7 @@ public Button btn_iddietpepsi;
 public Button btn_idmountaindew;
 
 @FXML
-public Button btn_iddrpeper;
+public Button btn_iddrpepper;
 
 @FXML
 public Button btn_idsierramist;
@@ -229,7 +229,7 @@ public void initialize(URL location, ResourceBundle resources)
 				
 				}
 			});
-	btn_iddrpeper.setOnAction(new EventHandler<ActionEvent> ()
+	btn_iddrpepper.setOnAction(new EventHandler<ActionEvent> ()
 			{
 				@Override
 				public void handle(ActionEvent event) 
@@ -270,7 +270,8 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					Main.Scenes.DisplayMenuOptionsScene();
+					//Main.dbconnect. 	
 				
 				}
 			});

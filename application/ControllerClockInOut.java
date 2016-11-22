@@ -75,7 +75,8 @@ public class ControllerClockInOut implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				Main.Scenes.DisplayLoginScene();
+				//Main.dbconnect. 	
 			
 			}
 		});

@@ -1,14 +1,17 @@
 
 package application;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 
 
 public class ControllerMenuOptions implements Initializable
@@ -30,9 +33,6 @@ public class ControllerMenuOptions implements Initializable
 	
 	@FXML 
 	public Button idLunch; 
-	
-	@FXML
-	public Button idDinner;
 	
 	@FXML 
 	public Button Back;
@@ -92,7 +92,30 @@ public class ControllerMenuOptions implements Initializable
 						//Main.dbconnect. 
 					}
 				});
+		Back.setOnAction(new EventHandler<ActionEvent> ()
+				{
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						
+						Main.Scenes.DisplayLoginScene();
+						//Main.dbconnect. 
+					}
+				});
+		/*idLunch.setOnAction(new EventHandler<ActionEvent> ()
+				{
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						
+						Main.Scenes.DisplayMexicanCuisineScene();
+						//Main.dbconnect. 
+					}
+				});*/
+		
+		}
 	}
+		
 	
-} 
+ 
 

@@ -6,14 +6,20 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="541.0" prefWidth="601.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerStarters">
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerStarters">
    <children>
-      <Button fx:id="idguacandchips" layoutX="138.0" layoutY="130.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="133.0" text="Guacamole &amp; Chips" />
-      <Button fx:id="idmeltedcheese" layoutX="138.0" layoutY="255.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="133.0" text="Melted Cheese" />
-      <Button fx:id="idmozzarellasticks" layoutX="218.0" layoutY="376.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="168.0" text="Mozzarella Chesse Sticks" />
-      <Button fx:id="idloadedfries" layoutX="332.0" layoutY="255.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="133.0" text="Loaded Fries" />
-      <Button fx:id="idmixedflutes" layoutX="332.0" layoutY="130.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="133.0" text="Mixed Flutes" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" stroke="BLACK" strokeType="INSIDE" width="604.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" layoutX="5.0" layoutY="483.0" stroke="BLACK" strokeType="INSIDE" width="604.0" />
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" style="-: ;" styleClass="background" stylesheets="@dark%20theme.css">
+         <children>
+            <Button fx:id="idguacandchips" layoutX="23.0" layoutY="105.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="248.0" text="Guacamole &amp; Chips" wrapText="true" />
+            <Button fx:id="idmeltedcheese" layoutX="16.0" layoutY="255.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="255.0" text="Melted Cheese" />
+            <Button fx:id="idmozzarellasticks" layoutX="110.0" layoutY="366.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="384.0" text="Mozzarella Chesse Sticks" />
+            <Button fx:id="idloadedfries" layoutX="332.0" layoutY="255.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="263.0" text="Loaded Fries" />
+            <Button fx:id="idmixedflutes" layoutX="332.0" layoutY="105.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="255.0" styleClass="background" text="Mixed Flutes" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" stroke="BLACK" strokeType="INSIDE" width="604.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" layoutY="542.0" stroke="BLACK" strokeType="INSIDE" width="604.0" />
+            <Button fx:id="back" layoutX="254.0" layoutY="481.0" mnemonicParsing="false" text="Back" />
+         </children>
+      </AnchorPane>
    </children>
-</AnchorPane>
+</HBox>

@@ -60,14 +60,14 @@ public class ControllerHealthyChoices implements Initializable
 		});
 		
 		Back.setOnAction(new EventHandler<ActionEvent> ()
-		{
-			@Override
-			public void handle(ActionEvent event) 
-			{
-				
-			
-			}
-		});
+				{
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						Main.Scenes.DisplayBreakfastScene();
+						//Main.dbconnect. 	
+					}
+				});
 		
 	}
 	

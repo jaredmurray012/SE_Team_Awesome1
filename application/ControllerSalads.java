@@ -89,7 +89,9 @@ public class ControllerSalads implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				Main.Scenes.DisplayMenuOptionsScene();
+				//Main.dbconnect. 
+			
 			
 			}
 		});

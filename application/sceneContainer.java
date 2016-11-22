@@ -13,59 +13,62 @@ public class sceneContainer
 
 	Stage stage;
 	
-	AnchorPane loginPane; 
+	HBox loginPane; 
 	Scene LoginScene;
 	
 	AnchorPane menuPane; 
 	Scene menuScene; 
 	
-	AnchorPane ClockInOutPane;
+	HBox ClockInOutPane;
 	Scene ClockInOutScene;
 	
-	AnchorPane BreakfastPane; 
+	HBox BreakfastPane; 
 	Scene BreakfastScene; 
 	
-	AnchorPane BreakfastMasterpiecesPane; 
+	HBox BreakfastMasterpiecesPane; 
 	Scene BreakfastMasterpiecesScene;
 	
-	AnchorPane CountryFavoritesPane; 
+	HBox CountryFavoritesPane; 
 	Scene CountryFavoriteScene; 
 	
-	AnchorPane FamousBenedictsPane; 
+	HBox FamousBenedictsPane; 
 	Scene FamousBenedictsScene; 
 	
-	AnchorPane HealthyChoicesPane;
+	HBox HealthyChoicesPane;
 	Scene HealthyChoicesScene;
 	
 	AnchorPane HomePane;
 	Scene HomeScene;
 	
-	AnchorPane HotOffTheGriddlePane;
+	HBox HotOffTheGriddlePane;
 	Scene HotOffTheGriddleScene;
 	
-	AnchorPane MexicanCuisinePane;
+	HBox MexicanCuisinePane;
 	Scene MexicanCuisineScene; 
 	
-	AnchorPane MenuOptionsPane;
+	HBox MenuOptionsPane;
 	Scene MenuOptionsScene;
 	
-	AnchorPane OmeletsPane; 
+	HBox OmeletsPane; 
 	Scene OmeletsScene;
 	
-	AnchorPane SkilletsPane; 
+	HBox SkilletsPane; 
 	Scene SkilletsScene; 
 	
-	AnchorPane StartersPane;
+	HBox StartersPane;
 	Scene StartersScene; 
 	
 	AnchorPane ToppingsPane;
 	Scene ToppingsScene; 
 	
-	AnchorPane BeveragesPane;
+	HBox BeveragesPane;
 	Scene BeveragesScene;
 	
-	AnchorPane SaladsPane;
+	HBox SaladsPane;
 	Scene SaladsScene;
+	
+	HBox BreakfastSandwichesPane;
+	Scene BreakfastSandwichesScene; 
 	
 	sceneContainer() // constructor 
 	{
@@ -91,7 +94,7 @@ public class sceneContainer
 			e.printStackTrace();
 		}
 		try {														
-			BreakfastPane = FXMLLoader.load(getClass().getResource("FXML_Breakfast2.fxml"));
+			BreakfastPane = FXMLLoader.load(getClass().getResource("FXML_Breakfast.fxml"));
 		} catch (IOException e) {
 			System.out.println("The BreakfastScene FXML did not load correctly"); 
 			e.printStackTrace();
@@ -103,6 +106,13 @@ public class sceneContainer
 			System.out.println("The BreakfastMasterpieces FXML did not load correctly"); 
 			e.printStackTrace();
 		}
+		try {
+				BreakfastSandwichesPane  = FXMLLoader.load(getClass().getResource("FXML_BreakfastSandwiches.fxml"));
+			} catch (IOException e) {
+				System.out.println("The Breakfast Sandwiches FXML did not load correctly");
+				e.printStackTrace();
+			}
+		
 		try {
 			CountryFavoritesPane = FXMLLoader.load(getClass().getResource("FXML_CountryFavorites.fxml"));
 		} catch (IOException e) {
@@ -148,7 +158,7 @@ public class sceneContainer
 			e.printStackTrace();
 		}
 		try {
-			SkilletsPane  = FXMLLoader.load(getClass().getResource("FXML_Skillets2.fxml"));
+			SkilletsPane  = FXMLLoader.load(getClass().getResource("FXML_Skillets.fxml"));
 		} catch (IOException e) {
 			System.out.println("Home SkilletsPane did not load correctly");
 			e.printStackTrace();
@@ -186,15 +196,16 @@ public class sceneContainer
 		 
 		HealthyChoicesScene = new Scene(HealthyChoicesPane, 600, 600);
 		
-		MenuOptionsScene = new Scene(MenuOptionsPane, 600, 600);
+		MenuOptionsScene = new Scene(MenuOptionsPane, 700, 600);
 		
 		menuScene = new Scene(menuPane, 600, 600); 
 		LoginScene = new Scene(loginPane, 600, 600); 
-		ClockInOutScene = new Scene(ClockInOutPane, 623, 702);
+		ClockInOutScene = new Scene(ClockInOutPane, 700, 702);
 		BreakfastScene = new Scene(BreakfastPane, 600, 600);
 		BreakfastMasterpiecesScene = new Scene(BreakfastMasterpiecesPane, 600, 600);
 		CountryFavoriteScene = new Scene(CountryFavoritesPane, 600, 600);
 		FamousBenedictsScene = new Scene(FamousBenedictsPane, 600, 600);
+		BreakfastSandwichesScene = new Scene(BreakfastSandwichesPane, 600, 600);
 		
 		HomeScene = new Scene(HomePane, 600, 600);
 		HotOffTheGriddleScene = new Scene(HotOffTheGriddlePane, 600, 600);
@@ -203,7 +214,8 @@ public class sceneContainer
 		SkilletsScene = new Scene(SkilletsPane, 600, 600);
 		StartersScene = new Scene(StartersPane, 600, 600);
 		ToppingsScene = new Scene(ToppingsPane, 600, 600);
-		//BeveragesScene = new Scene(BeveragesPane, 600, 600);
+		BeveragesScene = new Scene(BeveragesPane, 600, 600);
+		SaladsScene = new Scene(SaladsPane, 600, 600);
 		}
 	
 	
@@ -297,20 +309,20 @@ public class sceneContainer
 	public void DisplayStartersScene()
 	{
 		stage.setScene(StartersScene); 
-		stage.setTitle("Display Skillets Scene"); 
+		stage.setTitle("Display Starters Scene"); 
 		stage.show();
 	}
 	public void DisplayToppingsScene()
 	{
 		stage.setScene(ToppingsScene); 
-		stage.setTitle("Display Skillets Scene"); 
+		stage.setTitle("Display Toppings Scene"); 
 		stage.show();
 	}
 	
 	public void DisplayMenuOptionsScene()
 	{
 		stage.setScene(MenuOptionsScene); 
-		stage.setTitle("Display Skillets Scene"); 
+		stage.setTitle("Display Menu Options Scene"); 
 		stage.show();
 	}
 	
@@ -324,6 +336,12 @@ public class sceneContainer
 	{
 		stage.setScene(SaladsScene); 
 		stage.setTitle("Display Salads Scene"); 
+		stage.show();
+	}
+	public void DisplayBreakfastSandwichesScene()
+	{
+		stage.setScene(BreakfastSandwichesScene); 
+		stage.setTitle("Display BreakfastSandwiches Scene"); 
 		stage.show();
 	}
 
