@@ -136,7 +136,7 @@ public class ControllerMexicanCuisine {
 					public void handle(ActionEvent event) 
 					{
 						
-						Main.Scenes.DisplayMenuOptionsScene();
+						Main.Scenes.DisplayLoginScene();
 						//Main.dbconnect. 
 					}
 				});
