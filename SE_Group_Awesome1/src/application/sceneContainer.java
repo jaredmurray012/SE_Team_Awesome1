@@ -70,6 +70,69 @@ public class sceneContainer
 	HBox BreakfastSandwichesPane;
 	Scene BreakfastSandwichesScene; 
 	
+	HBox TablesPane;
+	Scene TablesScene;
+	
+	HBox Table1Pane;
+	Scene Table1Scene;
+	
+	HBox Table2Pane;
+	Scene Table2Scene;
+	
+	HBox Table3Pane;
+	Scene Table3Scene;
+	
+	HBox Table4Pane;
+	Scene Table4Scene;
+	
+	HBox Table5Pane;
+	Scene Table5Scene;
+	
+	HBox Table6Pane;
+	Scene Table6Scene;
+	
+	HBox Table7Pane;
+	Scene Table7Scene;
+	
+	HBox Table8Pane;
+	Scene Table8Scene;
+	
+	HBox Table9Pane;
+	Scene Table9Scene;
+	
+	HBox Table10Pane;
+	Scene Table10Scene;
+	
+	HBox Table11Pane;
+	Scene Table11Scene;
+	
+	HBox Table12Pane;
+	Scene Table12Scene;
+	
+	HBox Table13Pane;
+	Scene Table13Scene;
+	
+	HBox Table14Pane;
+	Scene Table14Scene;
+	
+	HBox SpecialtySandwichesPane;
+	Scene SpecialtySandwichesScene;
+	
+	HBox TwoHandedBurgersPane;
+	Scene TwoHandedBurgersScene;
+	
+	HBox ClassicSandwichesPane;
+	Scene ClassicSandwichesScene;
+	
+	HBox PaninisPane;
+	Scene PaninisScene;
+	
+	HBox WrapsPane;
+	Scene WrapsScene;
+	
+	HBox QuesadillasPane;
+	Scene QuesadillasScene;
+	
 	sceneContainer() // constructor 
 	{
 		stage = new Stage(); 
@@ -80,7 +143,108 @@ public class sceneContainer
 			System.out.println("The Login FXML did not load correctly"); 
 			e.printStackTrace();
 		} 
-		
+		try {
+			TablesPane  = FXMLLoader.load(getClass().getResource("FXML_Tables.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Tables FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table1Pane  = FXMLLoader.load(getClass().getResource("FXML_Table1.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table1 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table2Pane  = FXMLLoader.load(getClass().getResource("FXML_Table2.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table2 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table3Pane  = FXMLLoader.load(getClass().getResource("FXML_Table3.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table3 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table4Pane  = FXMLLoader.load(getClass().getResource("FXML_Table4.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table4 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table5Pane  = FXMLLoader.load(getClass().getResource("FXML_Table5.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table5 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table6Pane  = FXMLLoader.load(getClass().getResource("FXML_Table6.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table6 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table6Pane  = FXMLLoader.load(getClass().getResource("FXML_Table6.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table6 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table7Pane  = FXMLLoader.load(getClass().getResource("FXML_Table7.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table7 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table8Pane  = FXMLLoader.load(getClass().getResource("FXML_Table8.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table8 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table9Pane  = FXMLLoader.load(getClass().getResource("FXML_Table9.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table9 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table9Pane  = FXMLLoader.load(getClass().getResource("FXML_Table9.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table9 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table10Pane  = FXMLLoader.load(getClass().getResource("FXML_Table10.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table10 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table11Pane  = FXMLLoader.load(getClass().getResource("FXML_Table11.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table11 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table12Pane  = FXMLLoader.load(getClass().getResource("FXML_Table12.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table12 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table13Pane  = FXMLLoader.load(getClass().getResource("FXML_Table13.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table13 FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			Table14Pane  = FXMLLoader.load(getClass().getResource("FXML_Table14.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Table14 FXML did not load correctly");
+			e.printStackTrace();
+		}
 		try {
 			menuPane = FXMLLoader.load(getClass().getResource("FXML_Menu.fxml"));
 		} catch (IOException e) {
@@ -188,16 +352,69 @@ public class sceneContainer
 			e.printStackTrace();
 		}
 		try {
+			SpecialtySandwichesPane = FXMLLoader.load(getClass().getResource("FXML_SpecialtySandwiches.fxml"));
+		} catch (IOException e) {
+			System.out.println("Home Specialty Sandwiches did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			TwoHandedBurgersPane = FXMLLoader.load(getClass().getResource("FXML_TwoHandedBurgers.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Two Handed Burger FXML did not load correctly"); 
+			e.printStackTrace();
+		} 
+		try {
+			ClassicSandwichesPane  = FXMLLoader.load(getClass().getResource("FXML_ClassicSandwiches.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Classic Sandwiches FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			PaninisPane  = FXMLLoader.load(getClass().getResource("FXML_Paninis.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Healthy Choices FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			WrapsPane  = FXMLLoader.load(getClass().getResource("FXML_Wraps.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Wraps FXML did not load correctly");
+			e.printStackTrace();
+		}
+		try {
+			QuesadillasPane  = FXMLLoader.load(getClass().getResource("FXML_Quesadillas.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Healthy Choices FXML did not load correctly");
+			e.printStackTrace();
+		}
+		
+		try {
 			HealthyChoicesPane  = FXMLLoader.load(getClass().getResource("FXML_HeathlyChoices2.fxml"));
 		} catch (IOException e) {
 			System.out.println("The Healthy Choices FXML did not load correctly");
 			e.printStackTrace();
 		}
+		
+		
 		 
 		HealthyChoicesScene = new Scene(HealthyChoicesPane, 600, 600);
 		
 		MenuOptionsScene = new Scene(MenuOptionsPane, 700, 600);
-		
+		TablesScene = new Scene(TablesPane, 700, 600);
+		Table1Scene = new Scene(Table1Pane, 700,600);
+		Table2Scene = new Scene(Table2Pane, 700,600);
+		Table3Scene = new Scene(Table3Pane, 700,600);
+		Table4Scene = new Scene(Table4Pane, 700,600);
+		Table5Scene = new Scene(Table5Pane, 700,600);
+		Table6Scene = new Scene(Table6Pane, 700,600);
+		Table7Scene = new Scene(Table7Pane, 700,600);
+		Table8Scene = new Scene(Table8Pane, 700,600);
+		Table9Scene = new Scene(Table9Pane, 700,600);
+		Table10Scene = new Scene(Table10Pane, 700,600);
+		Table11Scene = new Scene(Table11Pane, 700,600);
+		Table12Scene = new Scene(Table12Pane, 700,600);
+		Table13Scene = new Scene(Table13Pane, 700,600);
+		Table14Scene = new Scene(Table14Pane, 700,600);
 		menuScene = new Scene(menuPane, 600, 600); 
 		LoginScene = new Scene(loginPane, 600, 600); 
 		ClockInOutScene = new Scene(ClockInOutPane, 700, 702);
@@ -206,7 +423,12 @@ public class sceneContainer
 		CountryFavoriteScene = new Scene(CountryFavoritesPane, 600, 600);
 		FamousBenedictsScene = new Scene(FamousBenedictsPane, 600, 600);
 		BreakfastSandwichesScene = new Scene(BreakfastSandwichesPane, 600, 600);
-		
+		SpecialtySandwichesScene = new Scene(SpecialtySandwichesPane, 600, 600);
+		TwoHandedBurgersScene = new Scene(TwoHandedBurgersPane, 600, 600);
+		ClassicSandwichesScene = new Scene(ClassicSandwichesPane, 600, 600);
+		PaninisScene = new Scene(PaninisPane, 600, 600);
+		WrapsScene = new Scene(WrapsPane, 600, 600);
+		QuesadillasScene = new Scene(QuesadillasPane, 600, 600);		
 		HomeScene = new Scene(HomePane, 600, 600);
 		HotOffTheGriddleScene = new Scene(HotOffTheGriddlePane, 600, 600);
 		MexicanCuisineScene = new Scene(MexicanCuisinePane, 600, 600);
@@ -245,6 +467,96 @@ public class sceneContainer
 		stage.setScene(ClockInOutScene);
 		stage.setTitle("Clock in here");
 		stage.show();
+	}
+	public void DisplayTablesScene()
+	{
+		stage.setScene(TablesScene); 
+		stage.setTitle("Tables"); 
+		stage.show(); 
+	}
+	public void DisplayTable1Scene()
+	{
+		stage.setScene(Table1Scene); 
+		stage.setTitle("Table1"); 
+		stage.show(); 
+	}
+	public void DisplayTable2Scene()
+	{
+		stage.setScene(Table2Scene); 
+		stage.setTitle("Table2"); 
+		stage.show(); 
+	}
+	public void DisplayTable3Scene()
+	{
+		stage.setScene(Table3Scene); 
+		stage.setTitle("Table3"); 
+		stage.show(); 
+	}
+	public void DisplayTable4Scene()
+	{
+		stage.setScene(Table4Scene); 
+		stage.setTitle("Table4"); 
+		stage.show(); 
+	}
+	public void DisplayTable5Scene()
+	{
+		stage.setScene(Table5Scene); 
+		stage.setTitle("Table5"); 
+		stage.show(); 
+	}
+	public void DisplayTable6Scene()
+	{
+		stage.setScene(Table6Scene); 
+		stage.setTitle("Table6"); 
+		stage.show(); 
+	}
+	public void DisplayTable7Scene()
+	{
+		stage.setScene(Table7Scene); 
+		stage.setTitle("Table7"); 
+		stage.show(); 
+	}
+	public void DisplayTable8Scene()
+	{
+		stage.setScene(Table8Scene); 
+		stage.setTitle("Table8"); 
+		stage.show(); 
+	}
+	public void DisplayTable9Scene()
+	{
+		stage.setScene(Table9Scene); 
+		stage.setTitle("Table9"); 
+		stage.show(); 
+	}
+	public void DisplayTable10Scene()
+	{
+		stage.setScene(Table10Scene); 
+		stage.setTitle("Table10"); 
+		stage.show(); 
+	}
+	public void DisplayTable11Scene()
+	{
+		stage.setScene(Table11Scene); 
+		stage.setTitle("Table11"); 
+		stage.show(); 
+	}
+	public void DisplayTable12Scene()
+	{
+		stage.setScene(Table12Scene); 
+		stage.setTitle("Table12"); 
+		stage.show(); 
+	}
+	public void DisplayTable13Scene()
+	{
+		stage.setScene(Table13Scene); 
+		stage.setTitle("Table13"); 
+		stage.show(); 
+	}
+	public void DisplayTable14Scene()
+	{
+		stage.setScene(Table14Scene); 
+		stage.setTitle("Table14"); 
+		stage.show(); 
 	}
 	public void DisplayBreakfastScene()
 	{
@@ -344,7 +656,40 @@ public class sceneContainer
 		stage.setTitle("Display BreakfastSandwiches Scene"); 
 		stage.show();
 	}
-
-	
-	
+	public void DisplaySpecialtySandwichesScene()
+	{
+		stage.setScene(SpecialtySandwichesScene); 
+		stage.setTitle("Display SpecialtySandwiches Scene"); 
+		stage.show();
+	}
+	public void DisplayTwoHandedBurgersScene()
+	{
+		stage.setScene(TwoHandedBurgersScene); 
+		stage.setTitle("Display TwoHandedBurgers Scene"); 
+		stage.show();
+	}
+	public void DisplayClassicSandwichesScene()
+	{
+		stage.setScene(ClassicSandwichesScene); 
+		stage.setTitle("Display ClassicSandwiches Scene"); 
+		stage.show();
+	}
+	public void DisplayPaninisScene()
+	{
+		stage.setScene(PaninisScene); 
+		stage.setTitle("Display Paninis Scene"); 
+		stage.show();
+	}
+	public void DisplayWrapsScene()
+	{
+		stage.setScene(WrapsScene); 
+		stage.setTitle("Display Wraps Scene"); 
+		stage.show();
+	}
+	public void DisplayQuesadillasScene()
+	{
+		stage.setScene(QuesadillasScene); 
+		stage.setTitle("Display Quesadillas Scene"); 
+		stage.show();
+	}
 }

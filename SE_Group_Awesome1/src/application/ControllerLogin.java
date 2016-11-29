@@ -36,7 +36,7 @@ public class ControllerLogin implements Initializable
 			public void handle(ActionEvent event) 
 			{
 				System.out.print(userNameId.getText() +" " + userPasswordId.getText());
-				Main.Scenes.DisplayMenuOptionsScene();
+				Main.Scenes.DisplayTablesScene();
 				//Main.dbconnect. 
 			}
 		});
