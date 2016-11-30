@@ -1,38 +1,32 @@
-
 package application;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
 
-
-public class ControllerMenuOptions implements Initializable
-{
-	
-	@FXML 
-	public Button btn_idbreakfast;
-	@FXML 
-	public Button btn_idstarters;
-	
-	@FXML 
-	public Button btn_idsalads;
+public class ControllerLunchOptions implements Initializable {
 
 	@FXML 
-	public Button btn_idbeverages;
+	public Button SpecialtySandwiches;
+	@FXML 
+	public Button TwoHandedBurgers;
 	
 	@FXML 
-	public Button btn_idmexican_cuisine;
+	public Button ClassicSandwiches;
+
+	@FXML 
+	public Button Paninis;
 	
 	@FXML 
-	public Button idlunch; 
+	public Button Wraps;
+	
+	@FXML 
+	public Button Quesadillas; 
 	
 	@FXML 
 	public Button Back;
@@ -40,55 +34,66 @@ public class ControllerMenuOptions implements Initializable
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
-		btn_idmexican_cuisine.setOnAction(new EventHandler<ActionEvent> ()
+		SpecialtySandwiches.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+				Main.Scenes.DisplaySpecialtySandwichesScene();
+				//Main.dbconnect. 
+			}
+		});
+
+		TwoHandedBurgers.setOnAction(new EventHandler<ActionEvent> ()
 				{
 					@Override
 					public void handle(ActionEvent event) 
 					{
 						
-						Main.Scenes.DisplayMexicanCuisineScene();
+						Main.Scenes.DisplayTwoHandedBurgersScene();
 						//Main.dbconnect. 
 					}
 				});
 		
-		btn_idstarters.setOnAction(new EventHandler<ActionEvent> ()
+		ClassicSandwiches.setOnAction(new EventHandler<ActionEvent> ()
 				{
 					@Override
 					public void handle(ActionEvent event) 
 					{
 						
-						Main.Scenes.DisplayStartersScene();
+						Main.Scenes.DisplayClassicSandwichesScene();
 						//Main.dbconnect. 
 					}
 				});
-		btn_idbeverages.setOnAction(new EventHandler<ActionEvent> ()
+		Paninis.setOnAction(new EventHandler<ActionEvent> ()
 				{
 					@Override
 					public void handle(ActionEvent event) 
 					{
 						
-						Main.Scenes.DisplayBeveragesScene();
+						Main.Scenes.DisplayPaninisScene();
 						//Main.dbconnect. 
 					}
 				});
-		btn_idbreakfast.setOnAction(new EventHandler<ActionEvent> ()
+		Wraps.setOnAction(new EventHandler<ActionEvent> ()
 				{
 					@Override
 					public void handle(ActionEvent event) 
 					{
 						
-						Main.Scenes.DisplayBreakfastScene();
+						Main.Scenes.DisplayWrapsScene();
 						//Main.dbconnect. 
 					}
 				});
 		
-		btn_idsalads.setOnAction(new EventHandler<ActionEvent> ()
+		Quesadillas.setOnAction(new EventHandler<ActionEvent> ()
 				{
 					@Override
 					public void handle(ActionEvent event) 
 					{
 						
-						Main.Scenes.DisplaySaladsScene();
+						Main.Scenes.DisplayQuesadillasScene();
 						//Main.dbconnect. 
 					}
 				});
@@ -98,24 +103,16 @@ public class ControllerMenuOptions implements Initializable
 					public void handle(ActionEvent event) 
 					{
 						
-						Main.Scenes.DisplayLoginScene();
+						Main.Scenes.DisplayMenuOptionsScene();
 						//Main.dbconnect. 
 					}
 				});
-		idlunch.setOnAction(new EventHandler<ActionEvent> ()
-				{
-					@Override
-					public void handle(ActionEvent event) 
-					{
-						
-						Main.Scenes.DisplayLunchOptionsScene();
-						//Main.dbconnect. 
-					}
-				});
+		
 		
 		}
 	}
 		
 	
  
+
 

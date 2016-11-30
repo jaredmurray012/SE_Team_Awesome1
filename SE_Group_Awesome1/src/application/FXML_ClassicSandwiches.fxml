@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerClassicSandwiches">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../../../../../Documents/GitHub/SE_Team_Awesome1/SE_Group_Awesome1/src/application/dark%20theme.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" layoutY="542.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Button fx:id="BLTClub" layoutX="78.0" layoutY="145.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="134.0" text="BLT Club" />
+            <Button fx:id="HamCheeseClub" layoutX="78.0" layoutY="364.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="134.0" text="Ham and Cheese Club" wrapText="true" />
+            <Button fx:id="TurkeyClub" layoutX="78.0" layoutY="260.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="134.0" text="Turkey CLub" />
+            <Button fx:id="ClassicReuben" layoutX="365.0" layoutY="260.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="134.0" text="Classic Reuben" wrapText="true" />
+            <Button fx:id="MonteCristo" layoutX="365.0" layoutY="145.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="134.0" text="Monte Cristo" />
+            <Button fx:id="Back" layoutX="387.0" layoutY="422.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="91.0" text="Back" />
+            <Label layoutX="225.0" layoutY="85.0" text="Classic Sandwiches" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

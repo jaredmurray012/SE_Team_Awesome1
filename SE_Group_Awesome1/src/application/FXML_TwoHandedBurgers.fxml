@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerTwoHandedBurgers">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../../../../../Documents/GitHub/SE_Team_Awesome1/SE_Group_Awesome1/src/application/dark%20theme.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="55.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="72.0" layoutY="531.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Button fx:id="TheClassic" layoutX="57.0" layoutY="127.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="The Classic" />
+            <Button fx:id="BaconCheeseBurger" layoutX="57.0" layoutY="220.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="Bacon Cheese Burger" wrapText="true" />
+            <Button fx:id="WisconsinBurger" layoutX="57.0" layoutY="323.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="Wisconsin Burger" wrapText="true" />
+            <Button fx:id="Hawaiian" layoutX="321.0" layoutY="323.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="Hawaiian " />
+            <Button fx:id="ConchisBurger" layoutX="321.0" layoutY="220.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="Conchis Burger" />
+            <Button fx:id="PattyMelt" layoutX="321.0" layoutY="127.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="Patty Melt" />
+            <Button fx:id="Back" layoutX="400.0" layoutY="436.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="92.0" text="Back" />
+            <Label layoutX="193.0" layoutY="70.0" text="Two Handed Burgers" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
