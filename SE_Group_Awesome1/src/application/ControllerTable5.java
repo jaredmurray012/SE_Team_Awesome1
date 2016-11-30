@@ -17,7 +17,7 @@ public class ControllerTable5 implements Initializable {
 	public Button MenuOptions1;
 	
 	@FXML 
-	public Button CurrentOrder;
+	public Pane CurrentOrder;
 	
 	@FXML 
 	public Button Back;
@@ -30,9 +30,11 @@ public class ControllerTable5 implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
+				Main.Scenes.DisplayMenuOptionsScene();
+				//Main.dbconnect. 	
 			}
 		});
-		
+		/*
 		CurrentOrder.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
@@ -41,12 +43,13 @@ public class ControllerTable5 implements Initializable {
 				
 			}
 		});
+		*/
 		Back.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				Main.Scenes.DisplayLoginScene();
+				Main.Scenes.DisplayTablesScene();
 				//Main.dbconnect. 	
 			}
 		});

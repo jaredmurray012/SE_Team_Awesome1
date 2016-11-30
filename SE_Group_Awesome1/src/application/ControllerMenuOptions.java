@@ -32,7 +32,7 @@ public class ControllerMenuOptions implements Initializable
 	public Button btn_idmexican_cuisine;
 	
 	@FXML 
-	public Button idLunch; 
+	public Button idlunch; 
 	
 	@FXML 
 	public Button Back;
@@ -98,20 +98,20 @@ public class ControllerMenuOptions implements Initializable
 					public void handle(ActionEvent event) 
 					{
 						
-						Main.Scenes.DisplayLoginScene();
+						Main.Scenes.DisplayTablesScene();
 						//Main.dbconnect. 
 					}
 				});
-		/*idLunch.setOnAction(new EventHandler<ActionEvent> ()
+		idlunch.setOnAction(new EventHandler<ActionEvent> ()
 				{
 					@Override
 					public void handle(ActionEvent event) 
 					{
 						
-						Main.Scenes.DisplayMexicanCuisineScene();
+						Main.Scenes.DisplayLunchOptionsScene();
 						//Main.dbconnect. 
 					}
-				});*/
+				});
 		
 		}
 	}

@@ -12,46 +12,46 @@ import javafx.scene.control.Button;
 
 public class ControllerTables implements Initializable {
 	@FXML 
-	public Button Table1;
+	public Button table1;
 	
 	@FXML 
-	public Button Table2;
+	public Button table2;
 	
 	@FXML 
-	public Button Table3;
+	public Button table3;
 
 	@FXML 
-	public Button Table4;
+	public Button table4;
 	
 	@FXML 
-	public Button Table5;
+	public Button table5;
 
 	@FXML 
-	public Button Table6;
+	public Button table6;
 	
 	@FXML 
-	public Button Table7;
+	public Button table7;
 	
 	@FXML 
-	public Button Table8;
+	public Button table8;
 	
 	@FXML 
-	public Button Table9;
+	public Button table9;
 	
 	@FXML 
-	public Button Table10;
+	public Button table10;
 	
 	@FXML 
-	public Button Table11;
+	public Button table11;
 	
 	@FXML 
-	public Button Table12;
+	public Button table12;
 
 	@FXML 
-	public Button Table13;
+	public Button table13;
 	
 	@FXML 
-	public Button Table14;
+	public Button table14;
 	
 	@FXML 
 	public Button Back;
@@ -60,7 +60,7 @@ public class ControllerTables implements Initializable {
 	
 	public void initialize(URL location, ResourceBundle resources){
 		
-		Table1.setOnAction(new EventHandler<ActionEvent> ()
+		table1.setOnAction(new EventHandler<ActionEvent> ()
 					{
 						@Override
 						public void handle(ActionEvent event) 
@@ -70,7 +70,7 @@ public class ControllerTables implements Initializable {
 						}
 					});
 		
-	Table2.setOnAction(new EventHandler<ActionEvent> ()
+	table2.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -79,7 +79,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table3.setOnAction(new EventHandler<ActionEvent> ()
+		table3.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -88,7 +88,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table4.setOnAction(new EventHandler<ActionEvent> ()
+		table4.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -97,7 +97,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table5.setOnAction(new EventHandler<ActionEvent> ()
+		table5.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -106,7 +106,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table6.setOnAction(new EventHandler<ActionEvent> ()
+		table6.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -115,7 +115,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table7.setOnAction(new EventHandler<ActionEvent> ()
+		table7.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -124,7 +124,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table8.setOnAction(new EventHandler<ActionEvent> ()
+		table8.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -133,7 +133,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table9.setOnAction(new EventHandler<ActionEvent> ()
+		table9.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -142,7 +142,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table10.setOnAction(new EventHandler<ActionEvent> ()
+		table10.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -152,7 +152,7 @@ public class ControllerTables implements Initializable {
 			}
 		});
 	
-		Table11.setOnAction(new EventHandler<ActionEvent> ()
+		table11.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -161,7 +161,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table12.setOnAction(new EventHandler<ActionEvent> ()
+		table12.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -170,7 +170,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table13.setOnAction(new EventHandler<ActionEvent> ()
+		table13.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 
@@ -179,7 +179,7 @@ public class ControllerTables implements Initializable {
 				//Main.dbconnect. 
 			}
 		});
-		Table14.setOnAction(new EventHandler<ActionEvent> ()
+		table14.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
 			public void handle(ActionEvent event) 

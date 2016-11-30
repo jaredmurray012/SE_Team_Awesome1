@@ -133,6 +133,9 @@ public class sceneContainer
 	HBox QuesadillasPane;
 	Scene QuesadillasScene;
 	
+	HBox LunchOptionsPane;
+	Scene LunchOptionsScene;
+	
 	sceneContainer() // constructor 
 	{
 		stage = new Stage(); 
@@ -394,27 +397,33 @@ public class sceneContainer
 			System.out.println("The Healthy Choices FXML did not load correctly");
 			e.printStackTrace();
 		}
+		try {
+			LunchOptionsPane  = FXMLLoader.load(getClass().getResource("FXML_LunchOptions.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Lunch Options FXML did not load correctly");
+			e.printStackTrace();
+		}
 		
 		
 		 
 		HealthyChoicesScene = new Scene(HealthyChoicesPane, 600, 600);
 		
 		MenuOptionsScene = new Scene(MenuOptionsPane, 700, 600);
-		TablesScene = new Scene(TablesPane, 700, 600);
-		Table1Scene = new Scene(Table1Pane, 700,600);
-		Table2Scene = new Scene(Table2Pane, 700,600);
-		Table3Scene = new Scene(Table3Pane, 700,600);
-		Table4Scene = new Scene(Table4Pane, 700,600);
-		Table5Scene = new Scene(Table5Pane, 700,600);
-		Table6Scene = new Scene(Table6Pane, 700,600);
-		Table7Scene = new Scene(Table7Pane, 700,600);
-		Table8Scene = new Scene(Table8Pane, 700,600);
-		Table9Scene = new Scene(Table9Pane, 700,600);
-		Table10Scene = new Scene(Table10Pane, 700,600);
-		Table11Scene = new Scene(Table11Pane, 700,600);
-		Table12Scene = new Scene(Table12Pane, 700,600);
-		Table13Scene = new Scene(Table13Pane, 700,600);
-		Table14Scene = new Scene(Table14Pane, 700,600);
+		TablesScene = new Scene(TablesPane, 600, 600);
+		Table1Scene = new Scene(Table1Pane, 600,600);
+		Table2Scene = new Scene(Table2Pane, 600,600);
+		Table3Scene = new Scene(Table3Pane, 600,600);
+		Table4Scene = new Scene(Table4Pane, 600,600);
+		Table5Scene = new Scene(Table5Pane, 600,600);
+		Table6Scene = new Scene(Table6Pane, 600,600);
+		Table7Scene = new Scene(Table7Pane, 600,600);
+		Table8Scene = new Scene(Table8Pane, 600,600);
+		Table9Scene = new Scene(Table9Pane, 600,600);
+		Table10Scene = new Scene(Table10Pane, 600,600);
+		Table11Scene = new Scene(Table11Pane, 600,600);
+		Table12Scene = new Scene(Table12Pane, 600,600);
+		Table13Scene = new Scene(Table13Pane, 600,600);
+		Table14Scene = new Scene(Table14Pane, 600,600);
 		menuScene = new Scene(menuPane, 600, 600); 
 		LoginScene = new Scene(loginPane, 600, 600); 
 		ClockInOutScene = new Scene(ClockInOutPane, 700, 702);
@@ -438,6 +447,7 @@ public class sceneContainer
 		ToppingsScene = new Scene(ToppingsPane, 600, 600);
 		BeveragesScene = new Scene(BeveragesPane, 600, 600);
 		SaladsScene = new Scene(SaladsPane, 600, 600);
+		LunchOptionsScene = new Scene(LunchOptionsPane, 600, 600);
 		}
 	
 	
@@ -692,4 +702,11 @@ public class sceneContainer
 		stage.setTitle("Display Quesadillas Scene"); 
 		stage.show();
 	}
+	public void DisplayLunchOptionsScene()
+	{
+		stage.setScene(LunchOptionsScene); 
+		stage.setTitle("Display LunchOptions Scene"); 
+		stage.show();
+	}
+	
 }

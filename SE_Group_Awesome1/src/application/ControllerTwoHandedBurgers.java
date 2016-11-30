@@ -98,7 +98,8 @@ public class ControllerTwoHandedBurgers implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				Main.Scenes.DisplayLunchOptionsScene();
+				//Main.dbconnect. 
 			
 			}
 		});

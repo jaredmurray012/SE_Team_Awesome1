@@ -6,21 +6,21 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<HBox alignment="CENTER" prefHeight="541.0" prefWidth="580.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<HBox alignment="CENTER" prefHeight="541.0" prefWidth="580.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerLunchOptions">
    <children>
-      <AnchorPane>
+      <AnchorPane minHeight="600.0" prefWidth="600.0" stylesheets="@../../../../../Documents/GitHub/SE_Team_Awesome1/SE_Group_Awesome1/src/application/dark%20theme.css">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="51.0" stroke="BLACK" strokeType="INSIDE" width="598.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="51.0" layoutY="490.0" stroke="BLACK" strokeType="INSIDE" width="598.0" />
-            <Button fx:id="SpecialtySandwiches" layoutX="98.0" layoutY="83.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Specialty Sandwiches" />
-            <Button fx:id="TwoHandedBurgers" layoutX="98.0" layoutY="167.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Two Handed Burgers" />
-            <Button fx:id="ClassicSandwiches" layoutX="98.0" layoutY="252.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Classic Sandwiches" />
-            <Button fx:id="Paninis" layoutX="292.0" layoutY="252.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Paninis" />
-            <Button fx:id="Wraps" layoutX="292.0" layoutY="167.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Wraps" />
-            <Button fx:id="Quesadillas" layoutX="292.0" layoutY="83.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Quesadillas" />
-            <Button fx:id="Back" layoutX="420.0" layoutY="405.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Back" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="61.0" layoutX="-7.0" layoutY="535.0" stroke="BLACK" strokeType="INSIDE" width="605.0" />
+            <Button fx:id="SpecialtySandwiches" layoutX="98.0" layoutY="83.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Specialty Sandwiches" wrapText="true" />
+            <Button fx:id="TwoHandedBurgers" layoutX="98.0" layoutY="198.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="128.0" text="Two Handed Burgers" wrapText="true" />
+            <Button fx:id="ClassicSandwiches" layoutX="105.0" layoutY="319.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Classic Sandwiches" wrapText="true" />
+            <Button fx:id="Paninis" layoutX="329.0" layoutY="319.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Paninis" />
+            <Button fx:id="Wraps" layoutX="329.0" layoutY="198.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Wraps" />
+            <Button fx:id="Quesadillas" layoutX="329.0" layoutY="83.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Quesadillas" />
+            <Button fx:id="Back" layoutX="420.0" layoutY="426.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="Back" />
+            <Label layoutX="233.0" layoutY="30.0" text="Lunch Options" />
          </children>
-     "src/FXML_LunchOptions.fxml" </AnchorPane>
+     </AnchorPane>
    </children>
 </HBox>

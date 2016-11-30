@@ -152,7 +152,8 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				Main.Scenes.DisplayLunchOptionsScene();
+				//Main.dbconnect. 
 			
 			}
 		});

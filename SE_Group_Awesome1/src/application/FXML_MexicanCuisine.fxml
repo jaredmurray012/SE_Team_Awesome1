@@ -22,6 +22,7 @@
             <Button fx:id="Back" layoutX="431.0" layoutY="411.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="123.0" text="Back" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="59.0" stroke="BLACK" strokeType="INSIDE" width="591.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="59.0" layoutX="3.0" layoutY="487.0" stroke="BLACK" strokeType="INSIDE" width="591.0" />
+            <Label layoutX="243.0" layoutY="30.0" text="Mexican Cuisine" />
          </children>
       </AnchorPane>
    </children>

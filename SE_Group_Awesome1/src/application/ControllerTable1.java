@@ -29,6 +29,8 @@ public class ControllerTable1 implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
+				Main.Scenes.DisplayMenuOptionsScene();
+				//Main.dbconnect. 	
 			}
 		});
 		
@@ -45,7 +47,7 @@ public class ControllerTable1 implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				Main.Scenes.DisplayLoginScene();
+				Main.Scenes.DisplayTablesScene();
 				//Main.dbconnect. 	
 			}
 		});

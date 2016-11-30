@@ -100,7 +100,8 @@ public class ControllerQuesadillas implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				Main.Scenes.DisplayLunchOptionsScene();
+				//Main.dbconnect. 
 			
 			}
 		});

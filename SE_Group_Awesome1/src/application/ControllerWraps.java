@@ -114,7 +114,8 @@ public class ControllerWraps implements Initializable {
 			public void handle(ActionEvent event) 
 			{
 				
-			
+				Main.Scenes.DisplayLunchOptionsScene();
+				//Main.dbconnect. 
 			}
 		});
 		

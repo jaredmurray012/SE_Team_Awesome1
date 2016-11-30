@@ -8,19 +8,20 @@
 
 <HBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerPaninis">
    <children>
-      <AnchorPane prefHeight="536.0" prefWidth="488.0" style="-fx-background-color: black;">
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../../../../../Documents/GitHub/SE_Team_Awesome1/SE_Group_Awesome1/src/application/dark%20theme.css">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" stroke="BLACK" strokeType="INSIDE" width="522.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" layoutY="478.0" stroke="BLACK" strokeType="INSIDE" width="522.0" />
-            <Button fx:id="HamandCheese" layoutX="56.0" layoutY="98.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Ham and Cheese" />
-            <Button fx:id="EggplantParmesan" layoutX="60.0" layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Eggplant Parmesan" />
-            <Button fx:id="ChickenParmesan" layoutX="243.0" layoutY="98.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Chicken Parmesan" />
-            <Button fx:id="TurkeyandCheddar" layoutX="243.0" layoutY="157.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Turkey and Cheddar" />
-            <Button fx:id="Veggie" layoutX="243.0" layoutY="219.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Veggie" />
-            <Button fx:id="TunaSalad" layoutX="57.0" layoutY="219.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Tuna Salad" />
-            <Button fx:id="Caprese" layoutX="243.0" layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Caprese" />
-            <Button fx:id="Back" layoutX="410.0" layoutY="394.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="63.0" text="Back" />
-            <Button fx:id="BaconandCheese" layoutX="56.0" layoutY="157.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Bacon and Cheese" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="65.0" layoutY="534.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Button fx:id="HamandCheese" layoutX="73.0" layoutY="98.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="123.0" text="Ham and Cheese" wrapText="true" />
+            <Button fx:id="EggplantParmesan" layoutX="73.0" layoutY="371.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="123.0" text="Eggplant Parmesan" wrapText="true" />
+            <Button fx:id="ChickenParmesan" layoutX="381.0" layoutY="92.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="123.0" text="Chicken Parmesan" wrapText="true" />
+            <Button fx:id="TurkeyandCheddar" layoutX="381.0" layoutY="181.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="123.0" text="Turkey and Cheddar" wrapText="true" />
+            <Button fx:id="Veggie" layoutX="381.0" layoutY="277.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Veggie" />
+            <Button fx:id="TunaSalad" layoutX="73.0" layoutY="277.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Tuna Salad" />
+            <Button fx:id="Caprese" layoutX="381.0" layoutY="382.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Caprese" />
+            <Button fx:id="Back" layoutX="248.0" layoutY="467.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="85.0" text="Back" />
+            <Button fx:id="BaconandCheese" layoutX="73.0" layoutY="187.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="123.0" text="Bacon and Cheese" wrapText="true" />
+            <Label layoutX="252.0" layoutY="82.0" text="Paninis" />
          </children>
       </AnchorPane>
    </children>
