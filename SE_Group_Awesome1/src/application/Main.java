@@ -21,7 +21,7 @@ public class Main extends Application
 	public void start(Stage primaryStage) 
 	{
 		try {
-			DBconnectHere = new DBConnect("jdbc:mysql://localhost:3306/se_awesome_test", "root", "");
+			DBconnectHere = new DBConnect("jdbc:mysql://localhost:3306/awesomepos", "root", "");
 		} catch (SQLException e) 
 		{
 			System.out.println("database connection error");
