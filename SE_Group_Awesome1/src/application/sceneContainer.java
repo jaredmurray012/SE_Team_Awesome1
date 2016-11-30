@@ -107,10 +107,10 @@ public class sceneContainer
 			e.printStackTrace();
 		}
 		try {
-				BreakfastSandwichesPane  = FXMLLoader.load(getClass().getResource("FXML_BreakfastSandwiches.fxml"));
+			BreakfastSandwichesPane  = FXMLLoader.load(getClass().getResource("FXML_BreakfastSandwiches.fxml"));
 			} catch (IOException e) {
-				System.out.println("The Breakfast Sandwiches FXML did not load correctly");
-				e.printStackTrace();
+			System.out.println("The Breakfast Sandwiches FXML did not load correctly");
+			e.printStackTrace();
 			}
 		
 		try {
@@ -132,18 +132,18 @@ public class sceneContainer
 			System.out.println("Home FXML did not load correctly");
 			e.printStackTrace();
 		}
-		/*try {
+		try {
 			HotOffTheGriddlePane  = FXMLLoader.load(getClass().getResource("FXML_HotOffTheGriddle.fxml"));
 		} catch (IOException e) {
 			System.out.println("HotOffTheGriddleScene did not load correctly");
 			e.printStackTrace();
-		}*/
-		/*try {
+		}
+		try {
 			MenuOptionsPane  = FXMLLoader.load(getClass().getResource("FXML_MenuOptions.fxml"));
 		} catch (IOException e) {
 			System.out.println("MenuOptions did not load correctly");
 			e.printStackTrace();
-		}*/
+		}
 		
 		try {
 			MexicanCuisinePane  = FXMLLoader.load(getClass().getResource("FXML_MexicanCuisine.fxml"));
@@ -175,18 +175,18 @@ public class sceneContainer
 			System.out.println("Home ToppingsPane did not load correctly");
 			e.printStackTrace();
 		}
-		/*try {
+		try {
 			BeveragesPane  = FXMLLoader.load(getClass().getResource("FXML_Beverages.fxml"));
 		} catch (IOException e) {
 			System.out.println("Home BeveragesPane did not load correctly");
 			e.printStackTrace();
-		}*/
-		/*try {
+		}
+		try {
 			SaladsPane  = FXMLLoader.load(getClass().getResource("FXML_Salads.fxml"));
 		} catch (IOException e) {
 			System.out.println("Home SaladsPane did not load correctly");
 			e.printStackTrace();
-		}*/
+		}
 		try {
 			HealthyChoicesPane  = FXMLLoader.load(getClass().getResource("FXML_HeathlyChoices2.fxml"));
 		} catch (IOException e) {
@@ -196,7 +196,7 @@ public class sceneContainer
 		 
 		HealthyChoicesScene = new Scene(HealthyChoicesPane, 600, 600);
 		
-		//MenuOptionsScene = new Scene(MenuOptionsPane, 700, 600);
+		MenuOptionsScene = new Scene(MenuOptionsPane, 700, 600);
 		
 		menuScene = new Scene(menuPane, 600, 600); 
 		LoginScene = new Scene(loginPane, 600, 600); 
@@ -208,14 +208,14 @@ public class sceneContainer
 		BreakfastSandwichesScene = new Scene(BreakfastSandwichesPane, 600, 600);
 		
 		HomeScene = new Scene(HomePane, 600, 600);
-		//HotOffTheGriddleScene = new Scene(HotOffTheGriddlePane, 600, 600);
+		HotOffTheGriddleScene = new Scene(HotOffTheGriddlePane, 600, 600);
 		MexicanCuisineScene = new Scene(MexicanCuisinePane, 600, 600);
 		OmeletsScene = new Scene(OmeletsPane, 600, 600);
 		SkilletsScene = new Scene(SkilletsPane, 600, 600);
 		StartersScene = new Scene(StartersPane, 600, 600);
 		ToppingsScene = new Scene(ToppingsPane, 600, 600);
-		//BeveragesScene = new Scene(BeveragesPane, 600, 600);
-		//SaladsScene = new Scene(SaladsPane, 600, 600);
+		BeveragesScene = new Scene(BeveragesPane, 600, 600);
+		SaladsScene = new Scene(SaladsPane, 600, 600);
 		}
 	
 	

@@ -36,7 +36,7 @@ public class ControllerMexicanCuisine {
 	public Button BanderillasDeCamaron;
 	
 	@FXML
-	public Button Back;
+	public Button Backid;
 	
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -130,16 +130,16 @@ public class ControllerMexicanCuisine {
 			}
 		});
 		
-		Back.setOnAction(new EventHandler<ActionEvent> ()
-				{
-					@Override
-					public void handle(ActionEvent event) 
-					{
-						
-						Main.Scenes.DisplayLoginScene();
-						//Main.dbconnect. 
-					}
-				});
+		Backid.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				
+				Main.Scenes.DisplayMenuOptionsScene();
+				//Main.dbconnect. 
+			}
+		});
 	}
 	
 	
