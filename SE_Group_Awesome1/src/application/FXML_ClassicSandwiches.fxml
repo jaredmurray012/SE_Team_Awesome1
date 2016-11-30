@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerClassicSandwiches">
+   <children>
+      <AnchorPane prefHeight="557.0" prefWidth="555.0" style="-fx-background-color: black;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" stroke="BLACK" strokeType="INSIDE" width="575.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" layoutY="499.0" stroke="BLACK" strokeType="INSIDE" width="575.0" />
+            <Button fx:id="BLTClub" layoutX="56.0" layoutY="99.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="134.0" text="BLT Club" />
+            <Button fx:id="HamCheeseClub" layoutX="56.0" layoutY="289.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="134.0" text="Ham and Cheese Club" />
+            <Button fx:id="TurkeyClub" layoutX="56.0" layoutY="196.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="134.0" text="Turkey CLub" />
+            <Button fx:id="ClassicReuben" layoutX="260.0" layoutY="196.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="134.0" text="Classic Reuben" />
+            <Button fx:id="MonteCristo" layoutX="260.0" layoutY="99.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="134.0" text="Monte Cristo" />
+            <Button fx:id="Back" layoutX="443.0" layoutY="411.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="67.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

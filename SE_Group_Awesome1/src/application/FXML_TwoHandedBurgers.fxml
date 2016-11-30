@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerTwoHandedBurgers">
+   <children>
+      <AnchorPane prefHeight="569.0" prefWidth="547.0" style="-fx-background-color: black;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="55.0" stroke="BLACK" strokeType="INSIDE" width="554.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="55.0" layoutY="514.0" stroke="BLACK" strokeType="INSIDE" width="554.0" />
+            <Button fx:id="TheClassic" layoutX="57.0" layoutY="121.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="The Classic" />
+            <Button fx:id="BaconCheeseBurger" layoutX="57.0" layoutY="201.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="Bacon Cheese Burger" />
+            <Button fx:id="WisconsinBurger" layoutX="57.0" layoutY="285.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="Wisconsin Burger" />
+            <Button fx:id="Hawaiian" layoutX="277.0" layoutY="285.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="Hawaiian " />
+            <Button fx:id="ConchisBurger" layoutX="277.0" layoutY="201.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="Conchis Burger" />
+            <Button fx:id="PattyMelt" layoutX="271.0" layoutY="121.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" text="Patty Melt" />
+            <Button fx:id="Back" layoutX="429.0" layoutY="436.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="63.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

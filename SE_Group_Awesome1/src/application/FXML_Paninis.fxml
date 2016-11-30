@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerPaninis">
+   <children>
+      <AnchorPane prefHeight="536.0" prefWidth="488.0" style="-fx-background-color: black;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" stroke="BLACK" strokeType="INSIDE" width="522.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="58.0" layoutY="478.0" stroke="BLACK" strokeType="INSIDE" width="522.0" />
+            <Button fx:id="HamandCheese" layoutX="56.0" layoutY="98.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Ham and Cheese" />
+            <Button fx:id="EggplantParmesan" layoutX="60.0" layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Eggplant Parmesan" />
+            <Button fx:id="ChickenParmesan" layoutX="243.0" layoutY="98.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Chicken Parmesan" />
+            <Button fx:id="TurkeyandCheddar" layoutX="243.0" layoutY="157.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Turkey and Cheddar" />
+            <Button fx:id="Veggie" layoutX="243.0" layoutY="219.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Veggie" />
+            <Button fx:id="TunaSalad" layoutX="57.0" layoutY="219.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Tuna Salad" />
+            <Button fx:id="Caprese" layoutX="243.0" layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Caprese" />
+            <Button fx:id="Back" layoutX="410.0" layoutY="394.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="63.0" text="Back" />
+            <Button fx:id="BaconandCheese" layoutX="56.0" layoutY="157.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Bacon and Cheese" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

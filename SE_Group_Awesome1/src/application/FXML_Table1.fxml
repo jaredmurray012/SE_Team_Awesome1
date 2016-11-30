@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="535.0" prefWidth="594.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="MenuOptions1" layoutX="314.0" layoutY="143.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="221.0" text="Menu Options" />
+            <Rectangle arcHeight="5.0" arcWidth="7.0" fill="#626c78" height="59.0" layoutX="-3.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="608.0" />
+            <Rectangle arcHeight="5.0" arcWidth="7.0" fill="#626c78" height="59.0" layoutX="4.0" layoutY="476.0" stroke="BLACK" strokeType="INSIDE" width="604.0" />
+            <Button fx:id="Back" layoutX="427.0" layoutY="396.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="126.0" text="Back" />
+            <Button fx:id="CurrentOrder" layoutX="29.0" layoutY="75.0" mnemonicParsing="false" prefHeight="385.0" prefWidth="248.0" text="Current Order" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
