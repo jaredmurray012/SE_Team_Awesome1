@@ -34,14 +34,14 @@ public class ControllerBreakfastSandwiches implements Initializable
 	public void initialize(URL location, ResourceBundle resources) {
 		
 		
-	idCheese.setOnAction(new EventHandler<ActionEvent> ()
+	/*idCheese.setOnAction(new EventHandler<ActionEvent> ()
 				{
 					@Override
 					public void handle(ActionEvent event) 
 					{
 						
 					}
-				});
+				});*/
 	idSausageHamBacon.setOnAction(new EventHandler<ActionEvent> ()
 			{
 				@Override

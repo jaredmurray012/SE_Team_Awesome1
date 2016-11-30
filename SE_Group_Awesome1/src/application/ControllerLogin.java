@@ -51,7 +51,7 @@ public class ControllerLogin implements Initializable
 			}
 		});
 		
-		Btn_Clock.setOnAction(new EventHandler<ActionEvent> ()
+		/*Btn_Clock.setOnAction(new EventHandler<ActionEvent> ()
 				{
 					@Override
 					public void handle(ActionEvent event) 
@@ -60,7 +60,7 @@ public class ControllerLogin implements Initializable
 						Main.Scenes.DisplayClockInOutScene();
 						//Main.dbconnect. 
 					}
-				});
+				}); */
 		
 	}
 	

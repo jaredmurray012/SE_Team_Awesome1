@@ -175,7 +175,7 @@ public class ControllerHotOffTheGriddle implements Initializable
 			}
 		});
 		
-		Back.setOnAction(new EventHandler<ActionEvent> ()
+		/*Back.setOnAction(new EventHandler<ActionEvent> ()
 				{
 					@Override
 					public void handle(ActionEvent event) 
@@ -183,7 +183,7 @@ public class ControllerHotOffTheGriddle implements Initializable
 						Main.Scenes.DisplayBreakfastScene();
 						//Main.dbconnect. 	
 					}
-				});
+				});*/
 		
 }
 	
