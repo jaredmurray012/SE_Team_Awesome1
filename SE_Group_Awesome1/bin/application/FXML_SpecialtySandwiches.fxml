@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerSpecialtySandwiches">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../../../../../Documents/GitHub/SE_Team_Awesome1/SE_Group_Awesome1/src/application/dark%20theme.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="52.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="52.0" layoutY="548.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Button fx:id="ChickenBLT" layoutX="60.0" layoutY="95.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="154.0" text="Chicken BLT" />
+            <Button fx:id="ChickenPhilly" layoutX="60.0" layoutY="167.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="154.0" text="Chicken Philly" />
+            <Button fx:id="ChickenParmesan" layoutX="60.0" layoutY="242.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="154.0" text="Chicken Parmesan" wrapText="true" />
+            <Button fx:id="GrilledFriedChicken" layoutX="60.0" layoutY="322.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="154.0" text="Grilled or Fried Chicken" wrapText="true" />
+            <Button fx:id="ChickenRanchPita" layoutX="60.0" layoutY="399.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="154.0" text="Chicken Ranch Pita" wrapText="true" />
+            <Button fx:id="LoxandBagel" layoutX="352.0" layoutY="95.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="154.0" text="Lox and Bagel" />
+            <Button fx:id="NYStrip" layoutX="352.0" layoutY="167.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="154.0" text="NY Strip" />
+            <Button fx:id="SteakPita" layoutX="352.0" layoutY="242.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="154.0" text="Steak Pita" />
+            <Button fx:id="ItalianBeef" layoutX="352.0" layoutY="322.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="154.0" text="Italian Beef" />
+            <Button fx:id="SteakPhilly" layoutX="352.0" layoutY="399.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="154.0" text="Steak Philly" />
+            <Button fx:id="Back" layoutX="451.0" layoutY="479.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="100.0" text="Back" />
+            <Label layoutX="214.0" layoutY="52.0" text="Specialty Sandwiches" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

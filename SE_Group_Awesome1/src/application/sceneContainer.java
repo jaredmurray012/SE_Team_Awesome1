@@ -88,6 +88,10 @@ public class sceneContainer
 	HBox WrapsPane;
 	Scene WrapsScene;
 	
+	AnchorPane OrderPane;
+	Scene OrderScene;
+	
+	
 	sceneContainer() // constructor 
 	{
 		stage = new Stage(); 
@@ -248,6 +252,16 @@ public class sceneContainer
 			e.printStackTrace();
 		}
 		
+		try {
+			OrderPane = FXMLLoader.load(getClass().getResource("FXML_Order.fxml"));
+		} catch (IOException e) {
+			System.out.println("The Order FXML did not load correctly");
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+		
 		HealthyChoicesScene = new Scene(HealthyChoicesPane, 600, 600);
 		
 		MenuOptionsScene = new Scene(MenuOptionsPane, 700, 600);
@@ -275,7 +289,7 @@ public class sceneContainer
 		BeveragesScene = new Scene(BeveragesPane, 600, 600);
 		SaladsScene = new Scene(SaladsPane, 600, 600);
 		LunchOptionsScene = new Scene(LunchOptionsPane, 600, 600);
-	
+		OrderScene = new Scene(OrderPane, 600, 600);
 		}
 	
 	
@@ -441,5 +455,11 @@ public class sceneContainer
 		stage.show();
 	}
 	
+	public void DisplayOrderScene()
+	{
+		stage.setScene(OrderScene); 
+		stage.setTitle("Display Order Scene"); 
+		stage.show();
+	}
 	
 }

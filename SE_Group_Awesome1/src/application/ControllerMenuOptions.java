@@ -19,6 +19,7 @@ public class ControllerMenuOptions implements Initializable
 	
 	@FXML 
 	public Button btn_idbreakfast;
+	
 	@FXML 
 	public Button btn_idstarters;
 	
@@ -33,6 +34,9 @@ public class ControllerMenuOptions implements Initializable
 	
 	@FXML 
 	public Button idlunch; 
+	
+	@FXML
+	public Button OrderB;
 	
 	@FXML 
 	public Button Back;
@@ -113,6 +117,16 @@ public class ControllerMenuOptions implements Initializable
 					}
 				});
 		
+		OrderB.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				Main.Scenes.DisplayOrderScene();
+				
+				//Main.dbconnect. 
+			}
+		});
 		}
 	}
 		

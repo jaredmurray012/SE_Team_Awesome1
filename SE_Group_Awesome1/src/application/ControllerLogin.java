@@ -35,9 +35,10 @@ public class ControllerLogin implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				System.out.print(userNameId.getText() +" " + userPasswordId.getText());
+				Main.DBconnectHere.CreateOrder();
 				Main.Scenes.DisplayMenuOptionsScene();
 				//Main.dbconnect. 
+				
 			}
 		});
 		
