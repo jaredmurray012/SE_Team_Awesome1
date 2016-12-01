@@ -36,6 +36,16 @@ public class ControllerOrder implements Initializable
 			}
 		});
 		
+		BackBtn.setOnAction(new EventHandler<ActionEvent> ()
+				{
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						Main.Scenes.DisplayMenuOptionsScene();
+						//Main.dbconnect. 
+					
+					}
+				});
 	}
 	
 	

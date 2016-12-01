@@ -88,7 +88,7 @@ public class sceneContainer
 	HBox WrapsPane;
 	Scene WrapsScene;
 	
-	AnchorPane OrderPane;
+	HBox OrderPane;
 	Scene OrderScene;
 	
 	
