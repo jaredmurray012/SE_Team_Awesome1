@@ -9,7 +9,7 @@
 
 <HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerOrder">
    <children>
-      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../../../../../Documents/GitHub/SE_Team_Awesome1/SE_Group_Awesome1/src/application/dark%20theme.css">
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@dark%20theme.css">
          <children>
             <Button fx:id="ViewOrderBtn" layoutX="414.0" layoutY="164.0" mnemonicParsing="false" text="View Order" />
             <Button fx:id="ClearOrderBtn" layoutX="414.0" layoutY="281.0" mnemonicParsing="false" text="Clear Order" />
