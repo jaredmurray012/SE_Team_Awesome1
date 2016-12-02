@@ -30,6 +30,7 @@
             <Button fx:id="btn_idmexican_cuisine" layoutX="472.0" layoutY="108.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="165.0" text="Mexican Cuisine" />
             <Button fx:id="Back" layoutX="299.0" layoutY="459.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="127.0" text="Back" />
             <Label layoutX="299.0" layoutY="30.0" text="Menu Options" />
+            <Button fx:id="OrderB" layoutX="504.0" layoutY="417.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="133.0" text="View Order" />
          </children>
       </AnchorPane>
    </children>

@@ -110,15 +110,16 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 		} 
 
 	}
-	public void DisplayOrder()
+	public String DisplayOrder()
 	{
 		int CurrentOrderId = 0; 
 		CurrentOrderId = OrderNumReturn(); 
 		
 		Statement myStmt = null; 
-		int myRs = 0;
+		ResultSet myRs = null; 
+		StringBuilder StringPrint = new StringBuilder();
 		
-		String sql = "select * from ordered_item where Order_order_ID =" + CurrentOrderId + " ' ";
+		String sql = "select * from ordered_item where Order_order_ID =" + CurrentOrderId;
 		
 		try {
 			myStmt = conn.createStatement();
@@ -129,15 +130,27 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 		}
 		
 		try {
-			myStmt.executeUpdate(sql);
+			myRs = myStmt.executeQuery(sql);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("the DisplayOrder Statement failed");
 			e.printStackTrace();
 		}
 		
+		try {
+			while(myRs.next())
+			{
+				StringPrint.append((myRs.getString("Items_item_ID")));
+				StringPrint.append(" \n ");
+				StringPrint.append((myRs.getString("item_price")));
+			}
+				
+		} catch (SQLException e) {
+			System.out.println("The Print statement for the order Id did not work");
+			e.printStackTrace();
+		}
 		
-		
+		return StringPrint.toString();
 	}
 }
 

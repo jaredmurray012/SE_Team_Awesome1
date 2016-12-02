@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerOrder">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../../../../../Documents/GitHub/SE_Team_Awesome1/SE_Group_Awesome1/src/application/dark%20theme.css">
+         <children>
+            <Button fx:id="ViewOrderBtn" layoutX="414.0" layoutY="164.0" mnemonicParsing="false" text="View Order" />
+            <Button fx:id="ClearOrderBtn" layoutX="414.0" layoutY="281.0" mnemonicParsing="false" text="Clear Order" />
+            <Button fx:id="BackBtn" layoutX="437.0" layoutY="471.0" mnemonicParsing="false" text="Back" />
+            <TextArea fx:id="TextAreaField" layoutX="48.0" layoutY="124.0" prefHeight="347.0" prefWidth="302.0">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextArea>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="66.0" layoutX="-2.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="59.0" layoutX="-2.0" layoutY="541.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </Rectangle>
+            <Label layoutX="276.0" layoutY="72.0" text="Orders" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

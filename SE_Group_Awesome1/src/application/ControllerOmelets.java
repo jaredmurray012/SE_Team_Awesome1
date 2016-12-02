@@ -36,7 +36,9 @@ public class ControllerOmelets implements Initializable
 	@FXML 
 	public Button Back;
 	
-
+	double ItemPrice = 0;
+	int UniqueItemId = 0; 
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources)
 	{
@@ -45,7 +47,9 @@ public class ControllerOmelets implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.25;
+				UniqueItemId = 129;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

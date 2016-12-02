@@ -8,7 +8,7 @@
 
 <HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMexicanCuisine">
    <children>
-      <AnchorPane prefHeight="600.0" prefWidth="600.0" style="-: black;" styleClass="background" stylesheets="@dark%20theme.css">
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@dark%20theme.css">
          <children>
             <Button fx:id="TacosDinner" layoutX="82.0" layoutY="111.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="173.0" text="Tacos Dinner" />
             <Button fx:id="Enchiladas" layoutX="82.0" layoutY="197.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="173.0" text="Enchiladas" />
