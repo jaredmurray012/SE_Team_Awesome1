@@ -29,7 +29,8 @@ public class ControllerSalads implements Initializable
 	@FXML 
 	public Button back; 
 	
-	
+	double ItemPrice = 0;
+	int UniqueItemId = 0;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
@@ -39,7 +40,9 @@ public class ControllerSalads implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 6.79;
+				UniqueItemId = 208;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -49,7 +52,9 @@ public class ControllerSalads implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 210;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -59,7 +64,9 @@ public class ControllerSalads implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 9.49;
+				UniqueItemId = 212;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -69,7 +76,9 @@ public class ControllerSalads implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 209;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -79,7 +88,9 @@ public class ControllerSalads implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 211;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

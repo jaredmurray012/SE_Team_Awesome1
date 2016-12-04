@@ -38,6 +38,9 @@ public class ControllerMexicanCuisine implements Initializable {
 	@FXML
 	public Button Backid;
 	
+	double ItemPrice = 0;
+	int UniqueItemId = 0;
+	
 	public void initialize(URL location, ResourceBundle resources) 
 	{
 		TacosDinner.setOnAction(new EventHandler<ActionEvent> ()
@@ -45,7 +48,9 @@ public class ControllerMexicanCuisine implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 9.25;
+				UniqueItemId = 201;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -55,7 +60,9 @@ public class ControllerMexicanCuisine implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 11.25;
+				UniqueItemId = 202;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -65,7 +72,9 @@ public class ControllerMexicanCuisine implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 11.99;
+				UniqueItemId = 204;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -75,7 +84,9 @@ public class ControllerMexicanCuisine implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 11.75;
+				UniqueItemId = 204;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -85,7 +96,9 @@ public class ControllerMexicanCuisine implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 11.75;
+				UniqueItemId = 205;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -95,7 +108,9 @@ public class ControllerMexicanCuisine implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 11.75;
+				UniqueItemId = 205;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -105,7 +120,9 @@ public class ControllerMexicanCuisine implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 12.75;
+				UniqueItemId = 206;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -115,7 +132,9 @@ public class ControllerMexicanCuisine implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 12.75;
+				UniqueItemId = 206;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -125,7 +144,9 @@ public class ControllerMexicanCuisine implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 12.75;
+				UniqueItemId = 207;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

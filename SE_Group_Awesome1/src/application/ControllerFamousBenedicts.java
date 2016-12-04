@@ -31,6 +31,9 @@ public class ControllerFamousBenedicts implements Initializable
 	@FXML 
 	public Button Back;
 	
+	double ItemPrice = 0;
+	int UniqueItemId = 0;
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -39,7 +42,9 @@ public class ControllerFamousBenedicts implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 144;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -49,7 +54,9 @@ public class ControllerFamousBenedicts implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 145;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -59,7 +66,9 @@ public class ControllerFamousBenedicts implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 146;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -69,7 +78,9 @@ public class ControllerFamousBenedicts implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 148;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -79,7 +90,9 @@ public class ControllerFamousBenedicts implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 9.25;
+				UniqueItemId = 147;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

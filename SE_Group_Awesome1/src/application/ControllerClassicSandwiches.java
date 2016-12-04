@@ -25,6 +25,8 @@ public class ControllerClassicSandwiches implements Initializable {
 	@FXML 
 	public Button ClassicReuben;
 	
+	double ItemPrice = 0;
+	int UniqueItemId = 0;
 	
 	@FXML 
 	public Button Back;
@@ -37,7 +39,10 @@ public class ControllerClassicSandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 177;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
+			
 			
 			}
 		});
@@ -47,7 +52,10 @@ public class ControllerClassicSandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 178;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
+			
 			
 			}
 		});
@@ -57,7 +65,10 @@ public class ControllerClassicSandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 179;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
+			
 			
 			}
 		});
@@ -66,7 +77,10 @@ public class ControllerClassicSandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 180;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
+			
 			
 			}
 		});
@@ -76,7 +90,10 @@ public class ControllerClassicSandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 181;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
+			
 			
 			}
 		});

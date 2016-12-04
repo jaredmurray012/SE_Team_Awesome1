@@ -43,6 +43,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 	@FXML 
 	public Button Back;
 	
+	double ItemPrice = 0.00; 
+	int UniqueItemId = 0;
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -52,7 +55,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 161;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -62,7 +67,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 162;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -72,7 +79,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 163;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -82,7 +91,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 164;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -92,7 +103,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 165;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -102,7 +115,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 9.25;
+				UniqueItemId = 166;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -112,7 +127,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 10.99;
+				UniqueItemId = 167;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -122,7 +139,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 168;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -132,7 +151,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 169;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -142,7 +163,9 @@ public class ControllerSpecialtySandwiches implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 100;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

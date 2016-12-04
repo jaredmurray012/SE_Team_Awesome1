@@ -52,6 +52,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 	@FXML
 	public Button Back;
 	
+	double ItemPrice = 0;
+	int UniqueItemId = 0;
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -60,7 +63,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 4.75;
+				UniqueItemId = 113;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -70,7 +75,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 5.75;
+				UniqueItemId = 114;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -80,7 +87,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 6.99;
+				UniqueItemId = 115;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -90,7 +99,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 5.75;
+				UniqueItemId = 114;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -100,7 +111,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 4.99;
+				UniqueItemId = 118;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -110,7 +123,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 6.49;
+				UniqueItemId = 125;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -120,7 +135,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 6.99;
+				UniqueItemId = 126;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -130,7 +147,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 6.99;
+				UniqueItemId = 119;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -140,7 +159,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 6.99;
+				UniqueItemId = 120;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -150,7 +171,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.49;
+				UniqueItemId = 121;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -160,7 +183,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 5.99;
+				UniqueItemId = 123;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -170,7 +195,9 @@ public class ControllerHotOffTheGriddle implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 6.99;
+				UniqueItemId = 124;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

@@ -39,6 +39,9 @@ public class ControllerBreakfastMasterpieces implements Initializable
 	@FXML 
 	public Button Back;
 	
+	double ItemPrice = 0;
+	int UniqueItemId = 0;
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -47,7 +50,9 @@ public class ControllerBreakfastMasterpieces implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.25;
+				UniqueItemId = 136;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			}
 		});
 		
@@ -56,7 +61,9 @@ public class ControllerBreakfastMasterpieces implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.25;
+				UniqueItemId = 137;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			}
 		});
 		
@@ -65,7 +72,9 @@ public class ControllerBreakfastMasterpieces implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.25;
+				UniqueItemId = 139;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			}
 		});
 		
@@ -74,7 +83,9 @@ public class ControllerBreakfastMasterpieces implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 9.49;
+				UniqueItemId = 140;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			}
 		});
 		
@@ -83,7 +94,9 @@ public class ControllerBreakfastMasterpieces implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.25;
+				UniqueItemId = 141;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			}
 		});
 		
@@ -92,7 +105,9 @@ public class ControllerBreakfastMasterpieces implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 9.49;
+				UniqueItemId = 143;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			}
 		});
 		
@@ -101,7 +116,9 @@ public class ControllerBreakfastMasterpieces implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.49;
+				UniqueItemId = 142;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			}
 		});
 		
@@ -110,7 +127,9 @@ public class ControllerBreakfastMasterpieces implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 10.99;
+				UniqueItemId = 138;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			}
 		});
 		

@@ -33,6 +33,7 @@ public class ControllerOrder implements Initializable
 			public void handle(ActionEvent event) 
 			{
 				TextAreaField.appendText(Main.DBconnectHere.DisplayOrder());
+				TextAreaField.appendText(Main.DBconnectHere.viewTotal());
 			}
 		});
 		
@@ -46,6 +47,16 @@ public class ControllerOrder implements Initializable
 					
 					}
 				});
+		
+		ClearOrderBtn.setOnAction(new EventHandler<ActionEvent> ()
+		{
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				TextAreaField.clear(); 
+			
+			}
+		});
 	}
 	
 	

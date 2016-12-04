@@ -28,7 +28,8 @@ public class ControllerBreakfastSandwiches implements Initializable
 	@FXML 
 	public Button Back;
 	
-	
+	double ItemPrice = 0;
+	int UniqueItemId = 0;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -39,7 +40,9 @@ public class ControllerBreakfastSandwiches implements Initializable
 					@Override
 					public void handle(ActionEvent event) 
 					{
-						
+						ItemPrice = 4.99;
+						UniqueItemId = 105;
+						Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 					}
 				});
 	idSausageHamBacon.setOnAction(new EventHandler<ActionEvent> ()
@@ -47,7 +50,9 @@ public class ControllerBreakfastSandwiches implements Initializable
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 5.99;
+					UniqueItemId = 108;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				}
 			});
 	idVeggie.setOnAction(new EventHandler<ActionEvent> ()
@@ -55,7 +60,9 @@ public class ControllerBreakfastSandwiches implements Initializable
 				@Override
 				public void handle(ActionEvent event) 
 				{
-				
+					ItemPrice = 4.99;
+					UniqueItemId = 105;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				}
 			});
 	idFriedEggSand.setOnAction(new EventHandler<ActionEvent> ()
@@ -63,7 +70,9 @@ public class ControllerBreakfastSandwiches implements Initializable
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 4.99;
+					UniqueItemId = 106;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				}
 			});
 	

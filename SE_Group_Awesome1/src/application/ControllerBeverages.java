@@ -73,6 +73,8 @@ public Button btn_iddolelemonade;
 @FXML
 public Button back;
 
+double ItemPrice = 0.00; 
+int UniqueItemId = 0;
 
 @Override
 public void initialize(URL location, ResourceBundle resources) 
@@ -82,7 +84,9 @@ public void initialize(URL location, ResourceBundle resources)
 		@Override
 		public void handle(ActionEvent event) 
 		{
-			
+			ItemPrice = 2.25;
+			UniqueItemId = 213;
+			Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 		
 		}
 	});
@@ -92,7 +96,9 @@ public void initialize(URL location, ResourceBundle resources)
 		@Override
 		public void handle(ActionEvent event) 
 		{
-			
+			ItemPrice = 2.25;
+			UniqueItemId = 214;
+			Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 		
 		}
 	});
@@ -102,7 +108,9 @@ public void initialize(URL location, ResourceBundle resources)
 		@Override
 		public void handle(ActionEvent event) 
 		{
-			
+			ItemPrice = 2.25;
+			UniqueItemId = 215;
+			Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 		
 		}
 	});
@@ -112,7 +120,9 @@ public void initialize(URL location, ResourceBundle resources)
 		@Override
 		public void handle(ActionEvent event) 
 		{
-			
+			ItemPrice = 3.75;
+			UniqueItemId = 217;
+			Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 		
 		}
 	});
@@ -122,7 +132,9 @@ public void initialize(URL location, ResourceBundle resources)
 		@Override
 		public void handle(ActionEvent event) 
 		{
-			
+			ItemPrice = 3.75;
+			UniqueItemId = 217;
+			Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 		
 		}
 	});
@@ -132,7 +144,9 @@ public void initialize(URL location, ResourceBundle resources)
 		@Override
 		public void handle(ActionEvent event) 
 		{
-			
+			ItemPrice = 3.75;
+			UniqueItemId = 217;
+			Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 		
 		}
 	});
@@ -142,7 +156,9 @@ public void initialize(URL location, ResourceBundle resources)
 		@Override
 		public void handle(ActionEvent event) 
 		{
-			
+			ItemPrice = 2.25;
+			UniqueItemId = 216;
+			Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 		
 		}
 	});
@@ -152,7 +168,9 @@ public void initialize(URL location, ResourceBundle resources)
 		@Override
 		public void handle(ActionEvent event) 
 		{
-			
+			ItemPrice = 2.25;
+			UniqueItemId = 216;
+			Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 		
 		}
 	});
@@ -162,7 +180,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 216;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -171,7 +191,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 216;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -180,7 +202,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 216;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -189,7 +213,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 216;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -198,7 +224,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 216;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -207,7 +235,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 218;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -216,7 +246,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 218;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -225,7 +257,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 218;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -234,7 +268,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 218;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -243,7 +279,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 218;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -252,7 +290,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 218;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});
@@ -261,7 +301,9 @@ public void initialize(URL location, ResourceBundle resources)
 				@Override
 				public void handle(ActionEvent event) 
 				{
-					
+					ItemPrice = 2.25;
+					UniqueItemId = 216;
+					Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 				
 				}
 			});

@@ -25,6 +25,8 @@ public class ControllerHealthyChoices implements Initializable
 	@FXML 
 	public Button Back;
 	
+	double ItemPrice = 0;
+	int UniqueItemId = 0;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
@@ -34,7 +36,9 @@ public class ControllerHealthyChoices implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 1.00;
+				UniqueItemId = 135;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -44,7 +48,9 @@ public class ControllerHealthyChoices implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 3.75;
+				UniqueItemId = 111;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -54,7 +60,9 @@ public class ControllerHealthyChoices implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 6.49;
+				UniqueItemId = 112;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

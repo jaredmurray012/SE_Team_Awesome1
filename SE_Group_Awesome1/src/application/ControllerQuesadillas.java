@@ -32,6 +32,9 @@ public class ControllerQuesadillas implements Initializable {
 	@FXML 
 	public Button Back;
 	
+	double ItemPrice = 0;
+	int UniqueItemId = 0;
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -41,7 +44,9 @@ public class ControllerQuesadillas implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 6.49;
+				UniqueItemId = 196;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -51,7 +56,9 @@ public class ControllerQuesadillas implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 197;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -61,7 +68,9 @@ public class ControllerQuesadillas implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 198;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -70,7 +79,9 @@ public class ControllerQuesadillas implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 199;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -80,7 +91,9 @@ public class ControllerQuesadillas implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 199;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -90,7 +103,9 @@ public class ControllerQuesadillas implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 200;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

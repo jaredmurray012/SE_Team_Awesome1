@@ -59,8 +59,9 @@ public class ControllerOmelets implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
-			
+				ItemPrice = 8.25;
+				UniqueItemId = 128;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			}
 		});
 		
@@ -69,7 +70,9 @@ public class ControllerOmelets implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.75;
+				UniqueItemId = 130;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -79,7 +82,9 @@ public class ControllerOmelets implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.75;
+				UniqueItemId = 131;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -89,7 +94,9 @@ public class ControllerOmelets implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.25;
+				UniqueItemId = 133;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -99,7 +106,9 @@ public class ControllerOmelets implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.75;
+				UniqueItemId = 134;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -109,7 +118,9 @@ public class ControllerOmelets implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.99;
+				UniqueItemId = 132;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

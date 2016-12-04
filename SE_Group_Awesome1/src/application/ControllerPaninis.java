@@ -39,6 +39,9 @@ public class ControllerPaninis implements Initializable {
 	@FXML 
 	public Button Back;
 	
+	double ItemPrice = 10.99;
+	int UniqueItemId = 138;
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -47,7 +50,9 @@ public class ControllerPaninis implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.49;
+				UniqueItemId = 182;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -57,7 +62,9 @@ public class ControllerPaninis implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.49;
+				UniqueItemId = 182;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -67,7 +74,9 @@ public class ControllerPaninis implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 183;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -77,7 +86,9 @@ public class ControllerPaninis implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 184;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -87,7 +98,9 @@ public class ControllerPaninis implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.99;
+				UniqueItemId = 185;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -97,7 +110,9 @@ public class ControllerPaninis implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 186;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -108,7 +123,9 @@ public class ControllerPaninis implements Initializable {
 			public void handle(ActionEvent event) 
 			{
 				
-			
+				ItemPrice = 7.99;
+				UniqueItemId = 187;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			}
 		});
 		
@@ -117,7 +134,9 @@ public class ControllerPaninis implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.49;
+				UniqueItemId = 188;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

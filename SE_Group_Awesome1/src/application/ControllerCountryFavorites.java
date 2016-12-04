@@ -29,6 +29,9 @@ public class ControllerCountryFavorites implements Initializable
 	@FXML 
 	public Button Back;
 	
+	double ItemPrice = 0;
+	int UniqueItemId = 0;
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources)
 	{
@@ -37,7 +40,9 @@ public class ControllerCountryFavorites implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 5.99;
+				UniqueItemId = 156;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -47,7 +52,9 @@ public class ControllerCountryFavorites implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 3.99;
+				UniqueItemId = 157;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -57,7 +64,9 @@ public class ControllerCountryFavorites implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.99;
+				UniqueItemId = 158;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -67,7 +76,9 @@ public class ControllerCountryFavorites implements Initializable
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 7.49;
+				UniqueItemId = 160;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});

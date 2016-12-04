@@ -97,7 +97,7 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 			e.printStackTrace();
 		}
 		
-		String sql = "insert into ordered_item (Items_item_ID, Order_order_ID , item_price) values (" + ItemID  + " , " + OrderId + " , " 
+		String sql = "insert into ordered_item (Item_ID, Order_ID , item_price) values (" + ItemID  + " , " + OrderId + " , " 
 				+ ItemP + ")";
 		//insert into ordered_item (Order_Item_ID, Items_item_ID, Order_order_ID) Values ( 5, 215, 3); #some arbitary number from java 
 
@@ -114,12 +114,15 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 	{
 		int CurrentOrderId = 0; 
 		CurrentOrderId = OrderNumReturn(); 
+		String StringCurrentOrderId = Integer.toString(CurrentOrderId);
 		
 		Statement myStmt = null; 
 		ResultSet myRs = null; 
 		StringBuilder StringPrint = new StringBuilder();
 		
-		String sql = "select * from ordered_item where Order_order_ID =" + CurrentOrderId;
+		String sql = "SELECT order_ID, Item_ID, item_price, asItemName(Item_ID) AS Item_Name " +
+				 "FROM Ordered_Item WHERE order_ID = " + CurrentOrderId;
+		
 		
 		try {
 			myStmt = conn.createStatement();
@@ -140,9 +143,18 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 		try {
 			while(myRs.next())
 			{
-				StringPrint.append((myRs.getString("Items_item_ID")));
-				StringPrint.append(" \n ");
+				
+				
+				StringPrint.append("\n");
+				StringPrint.append((myRs.getString("order_ID")));
+				StringPrint.append(" ");
+				StringPrint.append((myRs.getString("Item_ID")));
+				StringPrint.append(" ");
+				StringPrint.append((myRs.getString("Item_Name")));
+				StringPrint.append(" $");
 				StringPrint.append((myRs.getString("item_price")));
+				
+				
 			}
 				
 		} catch (SQLException e) {
@@ -151,6 +163,56 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 		}
 		
 		return StringPrint.toString();
+	}
+	public String viewTotal()
+	{
+		int currentOrderID = OrderNumReturn();
+		double totalPrice = 0.00;
+		
+		Statement myStmt = null; 
+		ResultSet myRs = null; 
+		
+		StringBuilder stringPrint = new StringBuilder();
+		StringBuilder stringSql = new StringBuilder(); 
+		
+		stringSql.append("SELECT sum(item_price) from ordered_item where order_ID = ");
+		stringSql.append(currentOrderID);
+		
+		try {
+			myStmt = conn.createStatement();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("the DisplayOrder Connection failed");
+			e.printStackTrace();
+		}
+		
+		try {
+			myRs = myStmt.executeQuery(stringSql.toString());
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("the DisplayOrder Statement failed");
+			e.printStackTrace();
+		}
+		
+		try {
+			while(myRs.next())
+			{
+				stringPrint.append("\n");
+				stringPrint.append(("___________________________________________________"));
+				stringPrint.append("\n");
+				stringPrint.append("The Amount Owed is : $");
+				stringPrint.append((myRs.getString("sum(item_price)")));
+				
+			}
+				
+		} catch (SQLException e) {
+			System.out.println("The Print statement for the order Id did not work");
+			e.printStackTrace();
+		}
+		
+		
+		return stringPrint.toString();
+		
 	}
 }
 

@@ -35,6 +35,9 @@ public class ControllerWraps implements Initializable {
 	@FXML 
 	public Button Back;
 	
+	double ItemPrice = 0.00; 
+	int UniqueItemId = 0; 
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -43,7 +46,9 @@ public class ControllerWraps implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.99;
+				UniqueItemId = 189;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -53,7 +58,9 @@ public class ControllerWraps implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 190;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -63,7 +70,9 @@ public class ControllerWraps implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 191;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -73,7 +82,9 @@ public class ControllerWraps implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.49;
+				UniqueItemId = 192;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -83,7 +94,9 @@ public class ControllerWraps implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.99;
+				UniqueItemId = 193;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -93,7 +106,9 @@ public class ControllerWraps implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.99;
+				UniqueItemId = 194;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
@@ -103,7 +118,9 @@ public class ControllerWraps implements Initializable {
 			@Override
 			public void handle(ActionEvent event) 
 			{
-				
+				ItemPrice = 8.99;
+				UniqueItemId = 195;
+				Main.DBconnectHere.InsertIntoOrderId(UniqueItemId, ItemPrice);
 			
 			}
 		});
