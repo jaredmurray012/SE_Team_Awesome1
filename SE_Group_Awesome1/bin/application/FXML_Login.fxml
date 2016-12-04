@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.control.*?>
@@ -11,31 +12,19 @@
    <children>
       <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@dark%20theme.css">
          <children>
-            <Label alignment="CENTER" layoutX="286.0" layoutY="132.0" prefHeight="59.0" prefWidth="119.0" text="Login" textAlignment="CENTER">
+            <Label alignment="CENTER" layoutX="207.0" layoutY="132.0" prefHeight="59.0" prefWidth="198.0" text="Our Lil Sales System" textAlignment="CENTER">
                <effect>
                   <Glow />
                </effect></Label>
-            <TextField fx:id="userNameId" layoutX="256.0" layoutY="236.0">
-               <effect>
-                  <InnerShadow />
-               </effect></TextField>
-            <TextField fx:id="userPasswordId" layoutX="256.0" layoutY="352.0">
-               <effect>
-                  <InnerShadow />
-               </effect></TextField>
-            <Button fx:id="Btn_LoginId" layoutX="256.0" layoutY="442.0" mnemonicParsing="false" text="Login " />
-            <Button fx:id="Btn_clearTextId" layoutX="406.0" layoutY="442.0" mnemonicParsing="false" text="Clear Text" />
-            <Button fx:id="Btn_Clock" layoutX="406.0" layoutY="38.0" mnemonicParsing="false" text="Clock In/Out" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="37.0" layoutX="27.0" layoutY="508.0" stroke="BLACK" strokeType="INSIDE" width="520.0">
+            <Button fx:id="Btn_LoginId" layoutX="246.0" layoutY="284.0" mnemonicParsing="false" text="Start Order" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="37.0" layoutX="54.0" layoutY="444.0" stroke="BLACK" strokeType="INSIDE" width="491.0">
                <effect>
                   <MotionBlur />
                </effect></Rectangle>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="532.0" layoutX="45.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="47.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="482.0" layoutX="100.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" width="47.0">
                <effect>
                   <BoxBlur />
                </effect></Rectangle>
-            <Label layoutX="113.0" layoutY="244.0" text="Employee Number" />
-            <Label layoutX="144.0" layoutY="360.0" text="Password" />
          </children>
       </AnchorPane>
    </children>

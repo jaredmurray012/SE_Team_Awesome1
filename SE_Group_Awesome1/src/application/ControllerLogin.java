@@ -12,20 +12,20 @@ import javafx.scene.control.TextField;
 
 public class ControllerLogin implements Initializable
 {
-	@FXML
-	public TextField userNameId; 
+	//@FXML
+	//public TextField userNameId; 
 	
-	@FXML 
-	public TextField userPasswordId; 
+	//@FXML 
+	//public TextField userPasswordId; 
 	
 	@FXML 
 	public Button Btn_LoginId;
 	
-	@FXML 
-	public Button Btn_clearTextId; 
+	//@FXML 
+	//public Button Btn_clearTextId; 
 	
-	@FXML
-	public Button Btn_Clock;
+	//@FXML
+	//public Button Btn_Clock;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
@@ -41,7 +41,7 @@ public class ControllerLogin implements Initializable
 				
 			}
 		});
-		
+		/*
 		Btn_clearTextId.setOnAction(new EventHandler<ActionEvent> ()
 		{
 			@Override
@@ -51,8 +51,8 @@ public class ControllerLogin implements Initializable
 				userPasswordId.clear(); 
 			}
 		});
-		
-		Btn_Clock.setOnAction(new EventHandler<ActionEvent> ()
+		*/
+		/*Btn_Clock.setOnAction(new EventHandler<ActionEvent> ()
 				{
 					@Override
 					public void handle(ActionEvent event) 
@@ -61,7 +61,7 @@ public class ControllerLogin implements Initializable
 						Main.Scenes.DisplayClockInOutScene();
 						//Main.dbconnect. 
 					}
-				}); 
+				}); */
 		
 	}
 	
