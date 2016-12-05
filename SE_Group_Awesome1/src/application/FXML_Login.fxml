@@ -10,20 +10,20 @@
 
 <HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerLogin">
    <children>
-      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@dark%20theme.css">
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@dark%20theme_Login.css">
          <children>
-            <Label alignment="CENTER" layoutX="207.0" layoutY="132.0" prefHeight="59.0" prefWidth="198.0" text="Our Lil Sales System" textAlignment="CENTER">
+            <Label alignment="CENTER" layoutX="179.0" layoutY="136.0" prefHeight="59.0" prefWidth="326.0" text="Our Lil Sales System" textAlignment="CENTER">
                <effect>
-                  <Glow />
+                  <Glow level="1.0" />
                </effect></Label>
-            <Button fx:id="Btn_LoginId" layoutX="246.0" layoutY="284.0" mnemonicParsing="false" text="Start Order" />
+            <Button fx:id="Btn_LoginId" layoutX="282.0" layoutY="300.0" mnemonicParsing="false" text="Start Order" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="37.0" layoutX="54.0" layoutY="444.0" stroke="BLACK" strokeType="INSIDE" width="491.0">
                <effect>
                   <MotionBlur />
                </effect></Rectangle>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="482.0" layoutX="100.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" width="47.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c78" height="490.0" layoutX="100.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" width="47.0">
                <effect>
-                  <BoxBlur />
+                  <InnerShadow />
                </effect></Rectangle>
          </children>
       </AnchorPane>
