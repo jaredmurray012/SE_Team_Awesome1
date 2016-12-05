@@ -4,6 +4,8 @@ import java.sql.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Date;
 public class DBConnect 
 {
@@ -54,7 +56,8 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 			e.printStackTrace();
 		}
 		
-		String sql = "select * from  invoice order by order_id desc limit 1";
+		//String sql = "select * from  invoice order by order_id desc limit 1";
+		String sql = "select order_ID from  invoice order by order_id desc limit 1";
 		
 		try {
 			myRs = myStmt.executeQuery(sql);
@@ -114,7 +117,6 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 	{
 		int CurrentOrderId = 0; 
 		CurrentOrderId = OrderNumReturn(); 
-		String StringCurrentOrderId = Integer.toString(CurrentOrderId);
 		
 		Statement myStmt = null; 
 		ResultSet myRs = null; 
@@ -144,7 +146,6 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 			while(myRs.next())
 			{
 				
-				
 				StringPrint.append("\n");
 				StringPrint.append((myRs.getString("order_ID")));
 				StringPrint.append(" ");
@@ -153,7 +154,6 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 				StringPrint.append((myRs.getString("Item_Name")));
 				StringPrint.append(" $");
 				StringPrint.append((myRs.getString("item_price")));
-				
 				
 			}
 				
@@ -167,16 +167,19 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 	public String viewTotal()
 	{
 		int currentOrderID = OrderNumReturn();
-		double totalPrice = 0.00;
+		double PriceInProgress = 0;
 		
+		StringBuilder finalOrder = new StringBuilder();
+		String Price = "";
 		Statement myStmt = null; 
 		ResultSet myRs = null; 
 		
+		NumberFormat formatThis = new DecimalFormat("#0.00");
 		StringBuilder stringPrint = new StringBuilder();
-		StringBuilder stringSql = new StringBuilder(); 
+		String stringSql; 
 		
-		stringSql.append("SELECT sum(item_price) from ordered_item where order_ID = ");
-		stringSql.append(currentOrderID);
+		stringSql = "SELECT SUM(item_price) from ordered_item where order_ID = " + currentOrderID;
+		
 		
 		try {
 			myStmt = conn.createStatement();
@@ -187,7 +190,7 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 		}
 		
 		try {
-			myRs = myStmt.executeQuery(stringSql.toString());
+			myRs = myStmt.executeQuery(stringSql);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("the DisplayOrder Statement failed");
@@ -201,8 +204,7 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 				stringPrint.append(("___________________________________________________"));
 				stringPrint.append("\n");
 				stringPrint.append("The Amount Owed is : $");
-				stringPrint.append((myRs.getString("sum(item_price)")));
-				
+				Price = myRs.getString("sum(item_price)");
 			}
 				
 		} catch (SQLException e) {
@@ -210,8 +212,9 @@ DBConnect(String dbURL, String user, String password) throws SQLException
 			e.printStackTrace();
 		}
 		
-		
-		return stringPrint.toString();
+		PriceInProgress = Double.parseDouble(Price); 
+		finalOrder = stringPrint.append(formatThis.format(PriceInProgress)); 
+		return finalOrder.toString();
 		
 	}
 }
